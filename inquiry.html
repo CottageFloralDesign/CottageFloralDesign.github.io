@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquire — Cottage Floral Design</title>
+  <meta name="description" content="Ready to bring your floral vision to life? Fill out our inquiry form to start planning your dream wedding or event florals.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="announcement">Now Booking 2026 &amp; 2027 Weddings</div>
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">Cottage Floral Design</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="inquiry.html" class="nav__link active">Inquire</a></li>
+      </ul>
+      <div class="nav__toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=1800&q=80');"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__subtitle">Let's Work Together</div>
+      <div class="hero__divider"></div>
+      <h1 class="hero__title">Inquire</h1>
+    </div>
+  </section>
+
+  <!-- Intro + Form -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="grid-2" style="gap: clamp(3rem, 6vw, 6rem);">
+
+        <!-- Left: Info -->
+        <div class="reveal">
+          <p class="feature__label" style="margin-bottom: 0.5rem;">Start Here</p>
+          <h2 style="margin-bottom: 1.5rem;">Tell Us About<br>Your <em class="italic">Celebration</em></h2>
+          <p style="color: var(--charcoal-light); margin-bottom: 2rem;">We'd love to learn about your vision, your venue, and the feeling you want your flowers to create. Fill out the form and we'll be in touch within 48 hours to schedule your complimentary consultation.</p>
+
+          <div style="margin-bottom: 2.5rem;">
+            <h3 style="margin-bottom: 1rem;">What to Expect</h3>
+            <div style="display: flex; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="font-family: var(--ff-display); font-size: 1.5rem; color: var(--sage-pale); line-height: 1;">01</span>
+              <div>
+                <strong style="display: block; margin-bottom: 0.2rem;">We respond within 48 hours</strong>
+                <span style="color: var(--charcoal-light); font-size: var(--fs-small);">With availability, initial thoughts, and next steps.</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="font-family: var(--ff-display); font-size: 1.5rem; color: var(--sage-pale); line-height: 1;">02</span>
+              <div>
+                <strong style="display: block; margin-bottom: 0.2rem;">Complimentary consultation</strong>
+                <span style="color: var(--charcoal-light); font-size: var(--fs-small);">We'll meet (in person or virtually) to dive deep into your vision.</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <span style="font-family: var(--ff-display); font-size: 1.5rem; color: var(--sage-pale); line-height: 1;">03</span>
+              <div>
+                <strong style="display: block; margin-bottom: 0.2rem;">Custom floral proposal</strong>
+                <span style="color: var(--charcoal-light); font-size: var(--fs-small);">A detailed design plan and quote tailored to your celebration.</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding: 2rem; background: var(--cream); border-left: 3px solid var(--sage-pale);">
+            <p style="font-family: var(--ff-display); font-style: italic; font-size: 1.15rem; color: var(--charcoal-light);">"From the very first email, I felt completely at ease. She listened to everything and brought it to life beyond my wildest dreams."</p>
+            <p style="margin-top: 0.8rem; font-size: var(--fs-small); color: var(--sage);">— Sarah &amp; James, June 2025</p>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="reveal reveal-delay-1">
+          <form id="inquiry-form" class="form-wrap" style="max-width: 100%;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date">
+              </div>
+              <div class="form-group">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="event-type">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="elopement">Elopement</option>
+                  <option value="bridal-shower">Bridal Shower</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="dinner">Intimate Dinner</option>
+                  <option value="photoshoot">Photo Shoot</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="venue">Venue Name &amp; Location</label>
+              <input type="text" id="venue" name="venue">
+            </div>
+            <div class="form-group">
+              <label for="guest-count">Estimated Guest Count</label>
+              <input type="number" id="guest-count" name="guest-count" min="1">
+            </div>
+            <div class="form-group">
+              <label for="budget">Floral Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select a range</option>
+                <option value="under-2k">Under $2,000</option>
+                <option value="2k-5k">$2,000 – $5,000</option>
+                <option value="5k-10k">$5,000 – $10,000</option>
+                <option value="10k-plus">$10,000+</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="details">Tell Us About Your Vision</label>
+              <textarea id="details" name="details" placeholder="Share your color palette ideas, floral preferences, Pinterest inspiration — anything that helps us understand your dream day."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="referral">How Did You Hear About Us?</label>
+              <input type="text" id="referral" name="referral">
+            </div>
+            <button type="submit" class="btn btn--filled" style="width: 100%; text-align: center;">Send Inquiry</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span class="marquee__item">"Working with Cottage Floral was the highlight of our planning process"</span>
+      <span class="marquee__item">"She truly made our floral dreams come to life"</span>
+      <span class="marquee__item">"I cannot recommend her enough — absolute perfection"</span>
+      <span class="marquee__item">"The attention to detail was extraordinary"</span>
+      <span class="marquee__item">"Working with Cottage Floral was the highlight of our planning process"</span>
+      <span class="marquee__item">"She truly made our floral dreams come to life"</span>
+      <span class="marquee__item">"I cannot recommend her enough — absolute perfection"</span>
+      <span class="marquee__item">"The attention to detail was extraordinary"</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">Cottage Floral Design</a>
+          <p>Romantic, garden-gathered florals for your most cherished celebrations.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Pinterest">PI</a>
+            <a href="#" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="inquiry.html">Inquire</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul>
+            <li><a href="inquiry.html">Weddings</a></li>
+            <li><a href="inquiry.html">Elopements</a></li>
+            <li><a href="inquiry.html">Events</a></li>
+            <li><a href="inquiry.html">Photo Shoots</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Get in Touch</h4>
+          <ul>
+            <li><a href="mailto:hello@cottagefloral.com">hello@cottagefloral.com</a></li>
+            <li><a href="inquiry.html">Inquiry Form</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Cottage Floral Design. All rights reserved.</span>
+        <span>Crafted with care &amp; seasonal blooms</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
