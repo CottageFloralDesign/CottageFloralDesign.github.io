@@ -4,6 +4,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // --- Dynamic booking years ---
+  const bookingYears = document.getElementById('booking-years');
+  if (bookingYears) {
+    const year = new Date().getFullYear();
+    bookingYears.textContent = year + ' & ' + (year + 1);
+  }
+
   // --- Header scroll effect ---
   const header = document.querySelector('.header');
   const onScroll = () => {

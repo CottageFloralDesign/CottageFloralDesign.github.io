@@ -203,7 +203,7 @@ h3 { font-size: var(--fs-h3); }
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center 30%;
   filter: brightness(0.65);
   transform: scale(1.05);
   animation: heroZoom 20s ease-in-out infinite alternate;
