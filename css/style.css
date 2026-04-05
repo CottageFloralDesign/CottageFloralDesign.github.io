@@ -332,7 +332,7 @@ h3 { font-size: var(--fs-h3); }
 .marquee__track {
   display: flex;
   width: max-content;
-  animation: marqueeScroll 35s linear infinite;
+  animation: marqueeScroll 60s linear infinite;
   will-change: transform;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
