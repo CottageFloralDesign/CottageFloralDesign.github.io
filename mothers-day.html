@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mother's Day Package — Cottage Floral Design</title>
+  <meta name="description" content="Celebrate Mom with a curated gift box featuring a 4-inch cake and fresh floral arrangement, beautifully packaged by Cottage Floral Design.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="announcement">Now Booking <span id="booking-years"></span> Weddings &amp; Events</div>
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">Cottage Floral Design</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="mothers-day.html" class="nav__link active">Mother's Day</a></li>
+        <li><a href="inquiry.html" class="nav__link">Inquire</a></li>
+      </ul>
+      <div class="nav__toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero__bg" style="background-image: url('assets/mothers-day/open-box.jpg'); background-position: center 40%;"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__subtitle">Limited Edition</div>
+      <div class="hero__divider"></div>
+      <h1 class="hero__title">Mother's Day<br>Package</h1>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section section--white">
+    <div class="container" style="max-width: 750px; text-align: center;">
+      <div class="reveal">
+        <p class="feature__label" style="margin-bottom: 0.5rem;">Celebrate Mom</p>
+        <h2>A Gift as Special<br>as <em class="italic">She Is</em></h2>
+        <p style="color: var(--charcoal-light); margin-top: 1.5rem;">Celebrate Mom with a thoughtfully curated gift designed to feel as special as she is. This Mother's Day box features a beautifully styled pairing of cake and fresh florals, elegantly packaged and finished with a soft, romantic touch.</p>
+        <p style="color: var(--charcoal-light); margin-top: 1rem;">Inside, you'll find a 4" two-layer cake (serving 4&ndash;6), perfectly sized for an intimate celebration, alongside a delicate arrangement of fresh flowers presented in a 3" glass vase. Each element is carefully arranged to create a gift that is both visually stunning and deliciously memorable.</p>
+        <p style="color: var(--charcoal-light); margin-top: 1rem;">Whether you're celebrating a mother, grandmother, or someone who means the world to you, this box is the perfect way to say <em>thank you</em>, <em>I love you</em>, and <em>you deserve something beautiful</em>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Images -->
+  <section class="section section--cream" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div class="md-gallery">
+        <div class="md-gallery__item reveal">
+          <img src="assets/mothers-day/open-box.jpg" alt="Mother's Day cake and floral box" loading="lazy">
+        </div>
+        <div class="md-gallery__item reveal reveal-delay-1">
+          <img src="assets/mothers-day/cake-focus.jpg" alt="4-inch two-layer cake" loading="lazy">
+        </div>
+        <div class="md-gallery__item reveal reveal-delay-2">
+          <img src="assets/mothers-day/floral-focus.jpg" alt="Fresh floral arrangement in glass vase" loading="lazy">
+        </div>
+        <div class="md-gallery__item reveal reveal-delay-3">
+          <img src="assets/mothers-day/closed-box.jpg" alt="Closed gift box" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price -->
+  <section class="section section--white" style="padding-bottom: 2rem;">
+    <div class="container" style="text-align: center;">
+      <div class="reveal" id="md-pricing">
+        <p class="feature__label" style="margin-bottom: 0.5rem;">Pricing</p>
+        <!-- JS populates this based on date -->
+      </div>
+      <div id="md-closed" style="display: none;" class="reveal">
+        <p class="feature__label" style="margin-bottom: 0.5rem;">Mother's Day 2026</p>
+        <h2 style="margin-bottom: 0.5rem;">Orders Are Now Closed</h2>
+        <p style="color: var(--charcoal-light);">Thank you for your support! Stay tuned for next year.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section class="section section--white" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="form-wrap">
+        <div style="text-align: center; margin-bottom: 3rem;" class="reveal">
+          <p class="feature__label" style="margin-bottom: 0.5rem;">Place Your Order</p>
+          <h2>Mother's Day Cake<br>&amp; <em class="italic">Arrangement</em></h2>
+        </div>
+
+        <form id="mothers-day-form" class="reveal" action="https://formsubmit.co/cottagefd@gmail.com" method="POST">
+          <input type="hidden" name="_cc" value="cakes@bayleeranae.com">
+          <input type="hidden" name="_subject" value="New Mother's Day Order">
+          <input type="hidden" name="_next" value="https://cottagefloraldesign.com/mothers-day.html?submitted=true">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="md-name">Name *</label>
+              <input type="text" id="md-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="md-phone">Phone Number *</label>
+              <input type="tel" id="md-phone" name="phone" placeholder="10 digits only" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="md-email">Email *</label>
+            <input type="email" id="md-email" name="email" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="md-color">Box Color *</label>
+              <select id="md-color" name="color" required>
+                <option value="" disabled selected>Choose a color</option>
+                <option value="Pink">Pink</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="md-flavor">Cake Flavor *</label>
+              <select id="md-flavor" name="flavor" required>
+                <option value="" disabled selected>Choose a flavor</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Coconut">Coconut</option>
+                <option value="Red Velvet">Red Velvet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="md-message">Personal Message on the Cake</label>
+            <input type="text" id="md-message" name="message" placeholder="Optional">
+          </div>
+
+          <div class="form-group">
+            <label for="md-city">Pickup City *</label>
+            <select id="md-city" name="city" required>
+              <option value="" disabled selected>Choose a city</option>
+              <option value="Eagle Mountain">Eagle Mountain</option>
+              <option value="Lehi">Lehi</option>
+              <option value="Lindon">Lindon</option>
+              <option value="Midway">Midway</option>
+              <option value="Orem">Orem</option>
+              <option value="Provo">Provo</option>
+            </select>
+            <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.5rem;">Exact pickup locations will be chosen a week before and emailed out.</p>
+          </div>
+
+          <!-- Venmo -->
+          <div class="form-group" style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
+            <label style="margin-bottom: 1rem;">Payment via Venmo — Total: <strong id="md-venmo-total"></strong></label>
+            <a href="assets/mothers-day/venmo.png" target="_blank">
+              <img src="assets/mothers-day/venmo.png" alt="Venmo QR code — click to enlarge" style="max-width: 320px; margin: 0 auto; border: 1px solid var(--sage-pale); cursor: pointer;">
+            </a>
+            <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-top: 0.8rem;">Click to open full size &middot; Scan to pay</p>
+          </div>
+
+          <div class="form-group">
+            <label class="radio-label">
+              <input type="checkbox" name="venmo" value="Yes" required>
+              <span>I have paid via Venmo *</span>
+            </label>
+          </div>
+
+          <!-- Disclaimer -->
+          <div class="md-disclaimer reveal">
+            <h3 style="margin-bottom: 1rem;">Order Agreement &amp; Disclaimer</h3>
+            <p>By placing this order, you acknowledge and agree to the following:</p>
+            <p>All sales are final and non-refundable. Due to the custom nature of our products, cancellations or changes may not be accommodated.</p>
+            <p>Cakes and desserts may contain or come into contact with common allergens including, but not limited to, dairy, eggs, wheat, soy, and nuts.</p>
+            <p>Floral elements are for decorative purposes only. <strong>They are not edible.</strong></p>
+            <p>Once the order has been picked up or delivered, we are not responsible for any damage due to improper handling, storage, or environmental conditions.</p>
+            <p>The customer assumes full responsibility for the product after pickup, including proper storage (refrigeration when necessary) and safe transport.</p>
+            <p>By completing your purchase, you agree to these terms.</p>
+          </div>
+
+          <div class="form-group" style="margin-top: 1.5rem;">
+            <label class="radio-label">
+              <input type="checkbox" name="agreement" required>
+              <span>I have read and agree to the order agreement and disclaimer above *</span>
+            </label>
+          </div>
+
+          <div style="text-align: center; margin-top: 2rem;">
+            <button type="submit" class="btn btn--filled">Submit Order</button>
+          </div>
+        </form>
+
+        <div id="md-success" style="display: none; text-align: center; padding: 3rem 0;">
+          <h2>Order <em class="italic">Received!</em></h2>
+          <p style="color: var(--charcoal-light); margin-top: 1rem; max-width: 450px; margin-left: auto; margin-right: auto;">Thank you for your order! We'll be in touch with pickup details as we get closer to Mother's Day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <a href="index.html" class="nav__logo">Cottage Floral Design</a>
+      <p class="footer__tagline">Tell your story through flowers</p>
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="mothers-day.html">Mother's Day</a>
+        <a href="inquiry.html">Inquire</a>
+      </nav>
+      <div class="footer__divider"></div>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/cottagefloraldesign/" target="_blank" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="https://www.tiktok.com/@cottagefloraldesign" target="_blank" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.98a8.21 8.21 0 004.76 1.52V7.05a4.84 4.84 0 01-1-.36z"/></svg></a>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Cottage Floral Design &middot; Crafted with care &amp; seasonal blooms
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+  (function() {
+    // Show success message after form submission redirect
+    if (window.location.search.indexOf('submitted=true') > -1) {
+      var form = document.getElementById('mothers-day-form');
+      var success = document.getElementById('md-success');
+      if (form) form.style.display = 'none';
+      if (success) success.style.display = 'block';
+    }
+
+    var now = new Date();
+    var earlyBirdEnd = new Date('2026-05-01T00:00:00');
+    var ordersClosed = new Date('2026-05-05T00:00:00');
+
+    var TAX_RATE = 0.0745;
+    var VENMO_FEE = 0.02;
+
+    var closed = now >= ordersClosed;
+    var earlyBird = now < earlyBirdEnd;
+    var basePrice = earlyBird ? 75 : 85;
+    var fullPrice = 85;
+
+    var tax = basePrice * TAX_RATE;
+    var subtotalWithTax = basePrice + tax;
+    var venmoFee = subtotalWithTax * VENMO_FEE;
+    var total = subtotalWithTax + venmoFee;
+
+    var pricingEl = document.getElementById('md-pricing');
+    var closedEl = document.getElementById('md-closed');
+    var form = document.getElementById('mothers-day-form');
+    var venmoTotal = document.getElementById('md-venmo-total');
+
+    if (closed) {
+      pricingEl.style.display = 'none';
+      closedEl.style.display = 'block';
+      if (form) form.style.display = 'none';
+      return;
+    }
+
+    var priceHTML = '';
+    if (earlyBird) {
+      priceHTML += '<div style="margin-bottom: 0.5rem;"><span style="text-decoration: line-through; color: var(--charcoal-light); font-family: var(--ff-display); font-size: clamp(1.4rem, 3vw, 2rem);">$' + fullPrice.toFixed(2) + '</span></div>';
+      priceHTML += '<h2 style="margin-bottom: 0.3rem; color: var(--sage);">$' + basePrice.toFixed(2) + ' <span style="font-size: 0.5em; letter-spacing: 0.1em;">EARLY BIRD</span></h2>';
+    } else {
+      priceHTML += '<h2 style="margin-bottom: 0.3rem;">$' + basePrice.toFixed(2) + '</h2>';
+    }
+    priceHTML += '<div style="color: var(--charcoal-light); font-size: var(--fs-small); line-height: 2;">';
+    priceHTML += 'Sales tax (7.45%): $' + tax.toFixed(2) + '<br>';
+    priceHTML += 'Venmo fee (2%): $' + venmoFee.toFixed(2) + '<br>';
+    priceHTML += '<strong style="color: var(--charcoal); font-size: 1rem;">Total: $' + total.toFixed(2) + '</strong>';
+    priceHTML += '</div>';
+
+    pricingEl.innerHTML = '<p class="feature__label" style="margin-bottom: 0.5rem;">Pricing</p>' + priceHTML;
+
+    if (venmoTotal) venmoTotal.textContent = '$' + total.toFixed(2);
+  })();
+  </script>
+</body>
+</html>
