@@ -127,7 +127,7 @@
             <div class="form-section__title">Customize Your Box</div>
             <div class="form-row">
               <div class="form-group">
-                <label for="md-color">Box Color *</label>
+                <label for="md-color">Cake/Arrangement Color *</label>
                 <select id="md-color" name="color" required>
                   <option value="" disabled selected>Choose a color</option>
                   <option value="Pink">Pink</option>
@@ -160,18 +160,16 @@
                   <option value="Friend">Friend</option>
                   <option value="Niece">Niece</option>
                   <option value="Daughter">Daughter</option>
-                  <option value="Granddaughter">Granddaughter</option>
                   <option value="Cousin">Cousin</option>
                   <option value="Stepmother">Stepmother</option>
-                  <option value="Stepdaughter">Stepdaughter</option>
                 </select>
                 <label class="radio-label">
                   <input type="radio" name="message_type" value="custom">
                   <span>Custom message (+$7.00)</span>
                 </label>
                 <div id="md-custom-wrap" style="margin-left: 1.8rem; display: none;">
-                  <input type="text" id="md-custom-message" name="custom_message" placeholder="Max 15 characters" maxlength="15">
-                  <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.3rem;">15 character limit</p>
+                  <input type="text" id="md-custom-message" name="custom_message" placeholder="Max 10 characters" maxlength="10">
+                  <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.3rem;">10 character limit</p>
                 </div>
               </div>
             </div>
@@ -179,19 +177,17 @@
 
           <!-- Section: Pickup -->
           <div class="form-section">
-            <div class="form-section__title">Pickup</div>
+            <div class="form-section__title">Pickup &mdash; May 9th</div>
             <div class="form-group">
-              <label for="md-city">Pickup City *</label>
-              <select id="md-city" name="city" required>
-                <option value="" disabled selected>Choose a city</option>
-                <option value="Eagle Mountain">Eagle Mountain</option>
-                <option value="Lehi">Lehi</option>
-                <option value="Lindon">Lindon</option>
-                <option value="Midway">Midway</option>
-                <option value="Orem">Orem</option>
-                <option value="Provo">Provo</option>
+              <label for="md-pickup">Pickup Location &amp; Time *</label>
+              <select id="md-pickup" name="pickup_location" required>
+                <option value="" disabled selected>Choose a pickup location</option>
+                <option value="Eagle Mountain 9am-11am">2036 E Autumn St, Eagle Mountain, UT 84005 &mdash; 9 am&ndash;11 am</option>
+                <option value="Lehi 9am-11am">2100 N 3900 W, Lehi, UT &mdash; 9 am&ndash;11 am</option>
+                <option value="Riverton 1pm-3pm">13330 Kestrel Range Rd, Riverton, UT 84096 &mdash; 1 pm&ndash;3 pm</option>
+                <option value="Midway 1pm-3pm">803 Dutch Valley Dr, Midway, UT 84049 &mdash; 1 pm&ndash;3 pm</option>
+                <option value="Provo 4pm-6pm">4100 Devonshire Dr, Provo, UT &mdash; 4 pm&ndash;6 pm</option>
               </select>
-              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.5rem;">Exact pickup locations will be chosen a week before and emailed out.</p>
             </div>
           </div>
 
@@ -218,17 +214,19 @@
           <!-- Disclaimer -->
           <div class="form-disclaimer">
             <h3>Order Agreement &amp; Disclaimer</h3>
-            <p>By placing this order, you acknowledge and agree to the following:</p>
             <p>All sales are final and non-refundable. Due to the custom nature of our products, cancellations or changes may not be accommodated.</p>
             <p>Cakes and desserts may contain or come into contact with common allergens including, but not limited to, dairy, eggs, wheat, soy, and nuts.</p>
             <p>Floral elements are for decorative purposes only. <strong>They are not edible.</strong></p>
             <p>Once the order has been picked up or delivered, we are not responsible for any damage due to improper handling, storage, or environmental conditions.</p>
             <p>The customer assumes full responsibility for the product after pickup, including proper storage (refrigeration when necessary) and safe transport.</p>
-            <p>By completing your purchase, you agree to these terms.</p>
+            <h3 style="margin-top: 1.5rem;">Missed Pickup Policy</h3>
+            <p>Please plan to arrive within your selected pickup window. If you miss your pickup time, you are welcome to attend a later pickup window the same day, if available.</p>
+            <p>If no other pickup windows are available and a meetup or delivery is required, a <strong>$30 missed pickup fee</strong> will apply and must be paid prior to receiving your order. This option is subject to availability on the afternoon of May 9th.</p>
+            <p>If delivery is required on May 10th, a <strong>$40 delivery fee</strong> will apply.</p>
             <div class="checkbox-group" style="margin-top: 1.2rem;">
               <label class="radio-label">
                 <input type="checkbox" name="agreement" required>
-                <span>I have read and agree to the order agreement and disclaimer above *</span>
+                <span>I have read and agree to the Order Agreement &amp; Disclaimer as well as the Missed Pickup Policy *</span>
               </label>
             </div>
           </div>
