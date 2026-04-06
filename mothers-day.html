@@ -19,6 +19,7 @@
         <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
         <li><a href="about.html" class="nav__link">About</a></li>
         <li><a href="mothers-day.html" class="nav__link active">Mother's Day</a></li>
+        <li><a href="dance-flowers.html" class="nav__link">Dance Flowers</a></li>
         <li><a href="inquiry.html" class="nav__link">Inquire</a></li>
       </ul>
       <div class="nav__toggle" aria-label="Toggle navigation">
@@ -34,7 +35,7 @@
     <div class="hero__content">
       <div class="hero__subtitle">Limited Edition</div>
       <div class="hero__divider"></div>
-      <h1 class="hero__title">Mother's Day<br>Package</h1>
+      <h1 class="hero__title">Mother's Day Package</h1>
     </div>
   </section>
 
@@ -101,81 +102,93 @@
           <input type="hidden" name="_next" value="https://cottagefloraldesign.com/mothers-day.html?submitted=true">
           <input type="text" name="_honey" style="display:none">
           <input type="hidden" name="_captcha" value="false">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="md-name">Name *</label>
-              <input type="text" id="md-name" name="name" required>
+          <!-- Section: Your Info -->
+          <div class="form-section">
+            <div class="form-section__title">Your Information</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="md-name">Name *</label>
+                <input type="text" id="md-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="md-phone">Phone Number *</label>
+                <input type="tel" id="md-phone" name="phone" placeholder="10 digits only" required>
+              </div>
             </div>
             <div class="form-group">
-              <label for="md-phone">Phone Number *</label>
-              <input type="tel" id="md-phone" name="phone" placeholder="10 digits only" required>
+              <label for="md-email">Email *</label>
+              <input type="email" id="md-email" name="email" required>
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="md-email">Email *</label>
-            <input type="email" id="md-email" name="email" required>
+          <!-- Section: Customize -->
+          <div class="form-section">
+            <div class="form-section__title">Customize Your Box</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="md-color">Box Color *</label>
+                <select id="md-color" name="color" required>
+                  <option value="" disabled selected>Choose a color</option>
+                  <option value="Pink">Pink</option>
+                  <option value="Yellow">Yellow</option>
+                  <option value="Blue">Blue</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="md-flavor">Cake Flavor *</label>
+                <select id="md-flavor" name="flavor" required>
+                  <option value="" disabled selected>Choose a flavor</option>
+                  <option value="Vanilla">Vanilla</option>
+                  <option value="Coconut">Coconut</option>
+                  <option value="Red Velvet">Red Velvet</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="md-message">Personal Message on the Cake</label>
+              <input type="text" id="md-message" name="message" placeholder="Optional">
+            </div>
           </div>
 
-          <div class="form-row">
+          <!-- Section: Pickup -->
+          <div class="form-section">
+            <div class="form-section__title">Pickup</div>
             <div class="form-group">
-              <label for="md-color">Box Color *</label>
-              <select id="md-color" name="color" required>
-                <option value="" disabled selected>Choose a color</option>
-                <option value="Pink">Pink</option>
-                <option value="Yellow">Yellow</option>
-                <option value="Blue">Blue</option>
+              <label for="md-city">Pickup City *</label>
+              <select id="md-city" name="city" required>
+                <option value="" disabled selected>Choose a city</option>
+                <option value="Eagle Mountain">Eagle Mountain</option>
+                <option value="Lehi">Lehi</option>
+                <option value="Lindon">Lindon</option>
+                <option value="Midway">Midway</option>
+                <option value="Orem">Orem</option>
+                <option value="Provo">Provo</option>
               </select>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.5rem;">Exact pickup locations will be chosen a week before and emailed out.</p>
+            </div>
+          </div>
+
+          <!-- Section: Payment -->
+          <div class="form-section">
+            <div class="form-section__title">Payment</div>
+            <div class="form-group" style="text-align: center;">
+              <label style="margin-bottom: 1rem;">Pay via Venmo &mdash; Total: <strong id="md-venmo-total"></strong></label>
+              <a href="assets/mothers-day/venmo.png" target="_blank">
+                <img src="assets/mothers-day/venmo.png" alt="Venmo QR code — click to enlarge" style="max-width: 320px; margin: 0 auto; border: 1px solid var(--sage-pale); cursor: pointer;">
+              </a>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-top: 0.8rem;">Click to open full size &middot; Scan to pay</p>
             </div>
             <div class="form-group">
-              <label for="md-flavor">Cake Flavor *</label>
-              <select id="md-flavor" name="flavor" required>
-                <option value="" disabled selected>Choose a flavor</option>
-                <option value="Vanilla">Vanilla</option>
-                <option value="Coconut">Coconut</option>
-                <option value="Red Velvet">Red Velvet</option>
-              </select>
+              <label class="radio-label">
+                <input type="checkbox" name="venmo" value="Yes" required>
+                <span>I have paid via Venmo *</span>
+              </label>
             </div>
-          </div>
-
-          <div class="form-group">
-            <label for="md-message">Personal Message on the Cake</label>
-            <input type="text" id="md-message" name="message" placeholder="Optional">
-          </div>
-
-          <div class="form-group">
-            <label for="md-city">Pickup City *</label>
-            <select id="md-city" name="city" required>
-              <option value="" disabled selected>Choose a city</option>
-              <option value="Eagle Mountain">Eagle Mountain</option>
-              <option value="Lehi">Lehi</option>
-              <option value="Lindon">Lindon</option>
-              <option value="Midway">Midway</option>
-              <option value="Orem">Orem</option>
-              <option value="Provo">Provo</option>
-            </select>
-            <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.5rem;">Exact pickup locations will be chosen a week before and emailed out.</p>
-          </div>
-
-          <!-- Venmo -->
-          <div class="form-group" style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
-            <label style="margin-bottom: 1rem;">Payment via Venmo — Total: <strong id="md-venmo-total"></strong></label>
-            <a href="assets/mothers-day/venmo.png" target="_blank">
-              <img src="assets/mothers-day/venmo.png" alt="Venmo QR code — click to enlarge" style="max-width: 320px; margin: 0 auto; border: 1px solid var(--sage-pale); cursor: pointer;">
-            </a>
-            <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-top: 0.8rem;">Click to open full size &middot; Scan to pay</p>
-          </div>
-
-          <div class="form-group">
-            <label class="radio-label">
-              <input type="checkbox" name="venmo" value="Yes" required>
-              <span>I have paid via Venmo *</span>
-            </label>
           </div>
 
           <!-- Disclaimer -->
-          <div class="md-disclaimer reveal">
-            <h3 style="margin-bottom: 1rem;">Order Agreement &amp; Disclaimer</h3>
+          <div class="form-disclaimer">
+            <h3>Order Agreement &amp; Disclaimer</h3>
             <p>By placing this order, you acknowledge and agree to the following:</p>
             <p>All sales are final and non-refundable. Due to the custom nature of our products, cancellations or changes may not be accommodated.</p>
             <p>Cakes and desserts may contain or come into contact with common allergens including, but not limited to, dairy, eggs, wheat, soy, and nuts.</p>
@@ -183,16 +196,15 @@
             <p>Once the order has been picked up or delivered, we are not responsible for any damage due to improper handling, storage, or environmental conditions.</p>
             <p>The customer assumes full responsibility for the product after pickup, including proper storage (refrigeration when necessary) and safe transport.</p>
             <p>By completing your purchase, you agree to these terms.</p>
+            <div class="checkbox-group" style="margin-top: 1.2rem;">
+              <label class="radio-label">
+                <input type="checkbox" name="agreement" required>
+                <span>I have read and agree to the order agreement and disclaimer above *</span>
+              </label>
+            </div>
           </div>
 
-          <div class="form-group" style="margin-top: 1.5rem;">
-            <label class="radio-label">
-              <input type="checkbox" name="agreement" required>
-              <span>I have read and agree to the order agreement and disclaimer above *</span>
-            </label>
-          </div>
-
-          <div style="text-align: center; margin-top: 2rem;">
+          <div class="form-submit">
             <button type="submit" class="btn btn--filled">Submit Order</button>
           </div>
         </form>
@@ -215,6 +227,7 @@
         <a href="portfolio.html">Portfolio</a>
         <a href="about.html">About</a>
         <a href="mothers-day.html">Mother's Day</a>
+        <a href="dance-flowers.html">Dance Flowers</a>
         <a href="inquiry.html">Inquire</a>
       </nav>
       <div class="footer__divider"></div>

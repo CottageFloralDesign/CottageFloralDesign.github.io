@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance Flowers — Cottage Floral Design</title>
+  <meta name="description" content="Order corsages, boutonnieres, and dance bouquets for prom and high school dances from Cottage Floral Design.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="announcement">Now Booking <span id="booking-years"></span> Weddings &amp; Events</div>
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">Cottage Floral Design</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="mothers-day.html" class="nav__link">Mother's Day</a></li>
+        <li><a href="dance-flowers.html" class="nav__link active">Dance Flowers</a></li>
+        <li><a href="inquiry.html" class="nav__link">Inquire</a></li>
+      </ul>
+      <div class="nav__toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero__bg" style="background-image: url('assets/Headliner.jpg'); background-position: center 40%;"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__subtitle">High School Dances</div>
+      <div class="hero__divider"></div>
+      <h1 class="hero__title">Dance Flowers</h1>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section section--white">
+    <div class="container" style="max-width: 750px; text-align: center;">
+      <div class="reveal">
+        <p class="feature__label" style="margin-bottom: 0.5rem;">Prom &amp; Dance Season</p>
+        <h2>Storytelling Through <em class="italic">Flowers</em></h2>
+        <p style="color: var(--charcoal-light); margin-top: 1.5rem;">I'm so excited to be a part of your high school dance memories! Cottage Floral Design is the place to go for storytelling through flowers.</p>
+        <p style="color: var(--charcoal-light); margin-top: 1rem;"><strong>Your order is placed when I have all the information I need, your full payment, and I text you.</strong></p>
+        <p style="color: var(--charcoal-light); margin-top: 1rem;">
+          <a href="https://www.instagram.com/cottagefloraldesign/" target="_blank" style="color: var(--sage);">@cottagefloraldesign</a> &middot; 385-307-8190
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="form-wrap">
+        <div style="text-align: center; margin-bottom: 3rem;" class="reveal">
+          <p class="feature__label" style="margin-bottom: 0.5rem;">Place Your Order</p>
+          <h2>Dance Floral <em class="italic">Order</em></h2>
+        </div>
+
+        <form id="dance-form" class="reveal" action="https://formsubmit.co/cottagefd@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Dance Flowers Order">
+          <input type="hidden" name="_next" value="https://cottagefloraldesign.com/dance-flowers.html?submitted=true">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- Section: Your Info -->
+          <div class="form-section">
+            <div class="form-section__title">Your Information</div>
+            <div class="form-group">
+              <label for="df-date">Dance Date *</label>
+              <select id="df-date" name="dance_date" required>
+                <option value="" disabled selected>Choose your dance date</option>
+                <option value="April 10 - Grantsville/Tooele">April 10th &mdash; Grantsville / Tooele</option>
+                <option value="April 17">April 17th</option>
+                <option value="April 18 - Wasatch">April 18th &mdash; Wasatch High School</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="df-name">Names of the Couple *</label>
+              <input type="text" id="df-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="df-phone">Phone Number *</label>
+              <input type="tel" id="df-phone" name="phone" required>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.3rem;">Contact for confirmation and follow-up questions.</p>
+            </div>
+          </div>
+
+          <!-- Section: Floral Order — Grantsville/Tooele & April 17 pricing -->
+          <div class="form-section" id="df-products-standard" style="display: none;">
+            <div class="form-section__title">Floral Order <span style="font-family: var(--ff-body); font-size: var(--fs-small); color: var(--charcoal-light);">&mdash; Pretax</span></div>
+            <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 1.2rem;">Select all items you'd like to order.</p>
+
+            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem;">Corsages</label>
+            <div class="product-grid">
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$25 Corsage - elastic">
+                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; elastic</div></div>
+                <div class="product-option__price">$25</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$30 Corsage - slap bracelet">
+                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; slap bracelet</div><div class="product-option__detail">One size fits all, may be uncomfortable on X-small or X-large</div></div>
+                <div class="product-option__price">$30</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$35 Corsage - metal cuff">
+                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; metal cuff</div><div class="product-option__detail">One size fits all, may be loose on X-small or not fit X-large</div></div>
+                <div class="product-option__price">$35</div>
+              </label>
+            </div>
+
+            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem; margin-top: 1.5rem;">Boutonnieres</label>
+            <div class="product-grid">
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$10 Boutonniere - pin on">
+                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; pin on</div></div>
+                <div class="product-option__price">$10</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$17 Boutonniere - shotgun shell (magnet)">
+                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; shotgun shell</div><div class="product-option__detail">Magnet attachment</div></div>
+                <div class="product-option__price">$17</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$19 Boutonniere - bullet casing (magnet)">
+                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; bullet casing</div><div class="product-option__detail">Magnet attachment</div></div>
+                <div class="product-option__price">$19</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$25 Boutonniere - pocket square">
+                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; pocket square</div><div class="product-option__detail">Requires functioning pocket; confirm with date</div></div>
+                <div class="product-option__price">$25</div>
+              </label>
+            </div>
+
+            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem; margin-top: 1.5rem;">Bouquet</label>
+            <div class="product-grid">
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$50 Dance Bouquet">
+                <div class="product-option__info"><div class="product-option__name">Dance Bouquet</div></div>
+                <div class="product-option__price">$50</div>
+              </label>
+            </div>
+
+            <div class="form-group" style="margin-top: 1.5rem; margin-bottom: 0;">
+              <label for="df-ordering-std">Ordering for Both? *</label>
+              <select id="df-ordering-std" name="ordering_for" disabled>
+                <option value="" disabled selected>Select one</option>
+                <option value="Both - 10% off">Me and my date &mdash; coordinate &amp; apply 10% off</option>
+                <option value="Just mine">Just ordering my flowers</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Section: Floral Order — Wasatch pricing (hidden by default) -->
+          <div class="form-section" id="df-products-wasatch" style="display: none;">
+            <div class="form-section__title">Floral Order <span style="font-family: var(--ff-body); font-size: var(--fs-small); color: var(--charcoal-light);">&mdash; Pretax</span></div>
+            <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 1.2rem;">Select all items you'd like to order.</p>
+
+            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem;">Corsages</label>
+            <div class="product-grid">
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$30 Corsage - elastic (Wasatch)">
+                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; elastic</div></div>
+                <div class="product-option__price">$30</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$33 Corsage - slap bracelet (Wasatch)">
+                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; slap bracelet</div><div class="product-option__detail">One size fits all, may be uncomfortable on X-small or X-large</div></div>
+                <div class="product-option__price">$33</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$37 Corsage - metal cuff (Wasatch)">
+                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; metal cuff</div><div class="product-option__detail">One size fits all, may be loose on X-small or not fit X-large</div></div>
+                <div class="product-option__price">$37</div>
+              </label>
+            </div>
+
+            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem; margin-top: 1.5rem;">Boutonnieres</label>
+            <div class="product-grid">
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$15 Boutonniere - pin on (Wasatch)">
+                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; pin on</div></div>
+                <div class="product-option__price">$15</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$25 Boutonniere - shotgun shell (Wasatch)">
+                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; shotgun shell</div><div class="product-option__detail">Magnet attachment</div></div>
+                <div class="product-option__price">$25</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$27 Boutonniere - bullet casing (Wasatch)">
+                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; bullet casing</div><div class="product-option__detail">Magnet attachment</div></div>
+                <div class="product-option__price">$27</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$30 Boutonniere - pocket square (Wasatch)">
+                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; pocket square</div><div class="product-option__detail">Requires functioning pocket; confirm with date</div></div>
+                <div class="product-option__price">$30</div>
+              </label>
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$35 Modern Boutonniere - half lapel (Wasatch)">
+                <div class="product-option__info"><div class="product-option__name">Modern Boutonniere &mdash; half lapel</div></div>
+                <div class="product-option__price">$35</div>
+              </label>
+            </div>
+
+            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem; margin-top: 1.5rem;">Bouquet</label>
+            <div class="product-grid">
+              <label class="product-option">
+                <input type="checkbox" name="order[]" value="$50 Dance Bouquet (Wasatch)">
+                <div class="product-option__info"><div class="product-option__name">Dance Bouquet</div></div>
+                <div class="product-option__price">$50</div>
+              </label>
+            </div>
+
+            <div class="form-group" style="margin-top: 1.5rem; margin-bottom: 0;">
+              <label for="df-ordering-was">Ordering for Both? *</label>
+              <select id="df-ordering-was" name="ordering_for" disabled>
+                <option value="" disabled selected>Select one</option>
+                <option value="Both - 10% off">Me and my date &mdash; coordinate &amp; apply 10% off</option>
+                <option value="Just mine">Just ordering my flowers</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Section: Colors -->
+          <div class="form-section">
+            <div class="form-section__title">Colors</div>
+
+            <div class="form-group">
+              <label for="df-flower-color">Flower Color *</label>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 0.8rem;">Options not guaranteed. If I can't match your preferred color, I'll choose one that matches your accent color. White flowers work beautifully with any accent color. Flowers are a natural product and colors can vary.</p>
+              <!-- Standard color options -->
+              <select id="df-flower-color" name="flower_color">
+                <option value="" disabled selected>Choose a flower color</option>
+                <option value="White">White</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Coral">Coral</option>
+                <option value="Light Pink">Light Pink</option>
+                <option value="Red">Red</option>
+                <option value="Light Blue">Light Blue</option>
+              </select>
+              <!-- Wasatch color options (hidden by default) -->
+              <select id="df-flower-color-wasatch" name="flower_color" style="display: none;" disabled>
+                <option value="" disabled selected>Choose a flower color</option>
+                <option value="Blush">Blush</option>
+                <option value="White">White</option>
+                <option value="Cream">Cream</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Coral">Coral</option>
+                <option value="Light Pink">Light Pink</option>
+                <option value="Hot Pink">Hot Pink</option>
+                <option value="Red">Red</option>
+                <option value="Burgundy">Burgundy</option>
+                <option value="Light Blue">Light Blue</option>
+                <option value="Unknown - I'll text you">Unknown For Now &mdash; I'll text you</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Accent Color &mdash; Ribbon *</label>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 0.8rem;">Feel free to send me a picture of the dress or tie and I'll do my best to match.</p>
+              <select name="accent_color" required>
+                <option value="" disabled selected>Choose an accent color</option>
+                <option value="Don't Care/You Choose">Don't Care / You Choose</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Navy">Navy</option>
+                <option value="Royal Blue">Royal Blue</option>
+                <option value="Teal">Teal</option>
+                <option value="Robin's Egg/Light Blue">Robin's Egg / Light Blue</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Forest/Dark Green">Forest / Dark Green</option>
+                <option value="Emerald Green">Emerald Green</option>
+                <option value="Coral">Coral</option>
+                <option value="Orange">Orange</option>
+                <option value="Blush">Blush</option>
+                <option value="Cream">Cream</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Section: Pickup & Details -->
+          <div class="form-section">
+            <div class="form-section__title">Pickup &amp; Details</div>
+
+            <!-- Default message -->
+            <p id="df-pickup-default" style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-bottom: 1.5rem;">Please select a dance date above to see pickup information.</p>
+
+            <!-- April 10 pickup (hidden) -->
+            <div id="df-pickup-apr10" style="display: none;">
+              <div class="form-group">
+                <label for="df-pickup-loc">Pickup Location *</label>
+                <select id="df-pickup-loc" name="pickup_location" disabled>
+                  <option value="" disabled selected>Choose a pickup location</option>
+                  <option value="Soelberg's Market, Grantsville 4-5pm">Soelberg's Market &mdash; 213 E Main St, Grantsville, UT 84029 &mdash; 4&ndash;5 pm</option>
+                  <option value="Walgreen's, Tooele 5:30-6:30pm">Walgreen's &mdash; 188 N Main St, Tooele, UT 84074 &mdash; 5:30&ndash;6:30 pm</option>
+                  <option value="Interested in delivery">Interested in possible delivery for extra cost</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- April 17 pickup (hidden) -->
+            <div id="df-pickup-apr17" style="display: none;">
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-bottom: 1.5rem;">Pickup locations and times will be texted to you a week before the dance.</p>
+            </div>
+
+            <!-- April 18 Wasatch pickup (hidden) -->
+            <div id="df-pickup-apr18" style="display: none;">
+              <div class="form-group">
+                <label>Pickup</label>
+                <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 0.5rem;">10 am &ndash; 12 pm at the Heber Walmart parking lot</p>
+                <p style="color: var(--charcoal-light); font-size: var(--fs-small);">1276 S US-189, Heber City, UT 84032</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="df-referral">How Did You Hear About Me?</label>
+              <input type="text" id="df-referral" name="referral" placeholder="Optional">
+            </div>
+          </div>
+
+          <!-- Terms -->
+          <div class="form-disclaimer">
+            <h3>Terms &amp; Conditions</h3>
+            <div class="checkbox-group">
+              <label class="radio-label">
+                <input type="checkbox" name="terms_pickup" value="Agreed" required>
+                <span><strong>Pick-Up Responsibility:</strong> I understand I am responsible for picking up my flowers at the agreed-upon time and location. Unclaimed orders cannot be refunded.</span>
+              </label>
+              <label class="radio-label">
+                <input type="checkbox" name="terms_care" value="Agreed" required>
+                <span><strong>Flower Care &amp; Liability:</strong> Once flowers leave the florist's possession, Cottage Floral Design is not responsible for wilting, damage, or loss caused by handling, transport, natural decay of perishable products, or weather.</span>
+              </label>
+              <label class="radio-label">
+                <input type="checkbox" name="terms_allergies" value="Agreed" required>
+                <span><strong>Allergies &amp; Safety:</strong> I understand that fresh flowers and greenery can cause allergic reactions, skin irritation, or staining, and the florist is not liable for these outcomes.</span>
+              </label>
+              <label class="radio-label">
+                <input type="checkbox" name="terms_magnet" value="Agreed" required>
+                <span><strong>Magnet Boutonniere Disclaimer:</strong> I confirm that the intended wearer does not have a pacemaker, defibrillator, or other implanted medical device that could be affected by magnets.</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Payment -->
+          <div class="form-section" id="df-payment" style="display: none;">
+            <div class="form-section__title">Payment</div>
+
+            <div id="df-order-total" style="text-align: center; margin-bottom: 2rem;">
+              <div style="color: var(--charcoal-light); font-size: var(--fs-small); line-height: 2;">
+                Subtotal: <span id="df-subtotal">$0.00</span><br>
+                Sales tax (7.45%): <span id="df-tax">$0.00</span><br>
+                Venmo fee (2%): <span id="df-venmo-fee">$0.00</span><br>
+                <strong style="color: var(--charcoal); font-size: 1.1rem;">Total: <span id="df-total">$0.00</span></strong>
+              </div>
+            </div>
+
+            <div class="form-group" style="text-align: center;">
+              <label style="margin-bottom: 1rem;">Pay via Venmo &mdash; Total: <strong id="df-venmo-total">$0.00</strong></label>
+              <a href="assets/mothers-day/venmo.png" target="_blank">
+                <img src="assets/mothers-day/venmo.png" alt="Venmo QR code — click to enlarge" style="max-width: 320px; margin: 0 auto; border: 1px solid var(--sage-pale); cursor: pointer;">
+              </a>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-top: 0.8rem;">Click to open full size &middot; Scan to pay</p>
+            </div>
+
+            <div class="form-group" style="margin-top: 1.5rem;">
+              <label class="radio-label">
+                <input type="checkbox" name="venmo_paid" value="Yes" required>
+                <span>I have paid via Venmo *</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn--filled">Submit Order</button>
+          </div>
+        </form>
+
+        <div id="df-success" style="display: none; text-align: center; padding: 3rem 0;">
+          <h2>Order <em class="italic">Received!</em></h2>
+          <p style="color: var(--charcoal-light); margin-top: 1rem; max-width: 450px; margin-left: auto; margin-right: auto;">Thank you for your order! I'll text you to confirm once I have everything I need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <a href="index.html" class="nav__logo">Cottage Floral Design</a>
+      <p class="footer__tagline">Tell your story through flowers</p>
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="mothers-day.html">Mother's Day</a>
+        <a href="dance-flowers.html">Dance Flowers</a>
+        <a href="inquiry.html">Inquire</a>
+      </nav>
+      <div class="footer__divider"></div>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/cottagefloraldesign/" target="_blank" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="https://www.tiktok.com/@cottagefloraldesign" target="_blank" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.98a8.21 8.21 0 004.76 1.52V7.05a4.84 4.84 0 01-1-.36z"/></svg></a>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Cottage Floral Design &middot; Crafted with care &amp; seasonal blooms
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+  (function() {
+    if (window.location.search.indexOf('submitted=true') > -1) {
+      var form = document.getElementById('dance-form');
+      var success = document.getElementById('df-success');
+      if (form) form.style.display = 'none';
+      if (success) success.style.display = 'block';
+    }
+
+    var TAX_RATE = 0.0745;
+    var VENMO_FEE = 0.02;
+
+    function updateTotal() {
+      var subtotal = 0;
+      // Only count checked items in visible product sections
+      document.querySelectorAll('.form-section[style=""] .product-option input[type="checkbox"]:checked, .form-section:not([style*="none"]) .product-option input[type="checkbox"]:checked').forEach(function(cb) {
+        var match = cb.value.match(/\$(\d+)/);
+        if (match) subtotal += parseInt(match[1]);
+      });
+
+      // Check if ordering for both (10% off)
+      var orderingStd = document.getElementById('df-ordering-std');
+      var orderingWas = document.getElementById('df-ordering-was');
+      var coupleDiscount = false;
+      if (orderingStd && !orderingStd.disabled && orderingStd.value === 'Both - 10% off') coupleDiscount = true;
+      if (orderingWas && !orderingWas.disabled && orderingWas.value === 'Both - 10% off') coupleDiscount = true;
+
+      var discount = coupleDiscount ? subtotal * 0.10 : 0;
+      var afterDiscount = subtotal - discount;
+      var tax = afterDiscount * TAX_RATE;
+      var subtotalWithTax = afterDiscount + tax;
+      var venmoFee = subtotalWithTax * VENMO_FEE;
+      var total = subtotalWithTax + venmoFee;
+
+      var paymentSection = document.getElementById('df-payment');
+      if (subtotal > 0) {
+        paymentSection.style.display = '';
+        var html = 'Subtotal: $' + subtotal.toFixed(2) + '<br>';
+        if (coupleDiscount) {
+          html += '<span style="color: var(--sage);">Couple discount (10% off): -$' + discount.toFixed(2) + '</span><br>';
+        }
+        html += 'Sales tax (7.45%): $' + tax.toFixed(2) + '<br>';
+        html += 'Venmo fee (2%): $' + venmoFee.toFixed(2) + '<br>';
+        html += '<strong style="color: var(--charcoal); font-size: 1.1rem;">Total: $' + total.toFixed(2) + '</strong>';
+        document.getElementById('df-order-total').querySelector('div').innerHTML = html;
+        document.getElementById('df-venmo-total').textContent = '$' + total.toFixed(2);
+      } else {
+        paymentSection.style.display = 'none';
+      }
+    }
+
+    // Highlight selected product options and update total
+    document.querySelectorAll('.product-option input').forEach(function(input) {
+      input.addEventListener('change', function() {
+        if (this.type === 'checkbox') {
+          this.closest('.product-option').classList.toggle('selected', this.checked);
+          updateTotal();
+        }
+      });
+    });
+
+    // Recalculate when ordering-for-both dropdown changes
+    document.getElementById('df-ordering-std').addEventListener('change', updateTotal);
+    document.getElementById('df-ordering-was').addEventListener('change', updateTotal);
+
+    // Dance date switching logic
+    var dateSelect = document.getElementById('df-date');
+    var stdProducts = document.getElementById('df-products-standard');
+    var wasProducts = document.getElementById('df-products-wasatch');
+    var flowerStd = document.getElementById('df-flower-color');
+    var flowerWas = document.getElementById('df-flower-color-wasatch');
+    var pickupDefault = document.getElementById('df-pickup-default');
+    var pickup10 = document.getElementById('df-pickup-apr10');
+    var pickup17 = document.getElementById('df-pickup-apr17');
+    var pickup18 = document.getElementById('df-pickup-apr18');
+    var pickupLoc = document.getElementById('df-pickup-loc');
+    var orderingStd = document.getElementById('df-ordering-std');
+    var orderingWas = document.getElementById('df-ordering-was');
+
+    if (dateSelect) {
+      dateSelect.addEventListener('change', function() {
+        var val = this.value;
+        var isWasatch = val.indexOf('Wasatch') > -1;
+        var isApr10 = val.indexOf('April 10') > -1;
+        var isApr17 = val.indexOf('April 17') > -1;
+
+        // Clear previous selections
+        document.querySelectorAll('.product-option input:checked').forEach(function(cb) {
+          cb.checked = false;
+          cb.closest('.product-option').classList.remove('selected');
+        });
+        updateTotal();
+
+        // Toggle product sections — show the right one
+        stdProducts.style.display = isWasatch ? 'none' : '';
+        wasProducts.style.display = isWasatch ? '' : 'none';
+
+        // Toggle required/disabled on ordering dropdowns
+        orderingStd.required = !isWasatch;
+        orderingStd.disabled = isWasatch;
+        orderingWas.required = isWasatch;
+        orderingWas.disabled = !isWasatch;
+
+        // Toggle required on flower color
+        flowerStd.required = !isWasatch;
+        flowerWas.required = isWasatch;
+
+        // Toggle flower color dropdowns
+        flowerStd.style.display = isWasatch ? 'none' : '';
+        flowerStd.required = !isWasatch;
+        flowerStd.disabled = isWasatch;
+        flowerWas.style.display = isWasatch ? '' : 'none';
+        flowerWas.required = isWasatch;
+        flowerWas.disabled = !isWasatch;
+
+        // Toggle pickup sections
+        pickupDefault.style.display = 'none';
+        pickup10.style.display = isApr10 ? '' : 'none';
+        pickup17.style.display = isApr17 ? '' : 'none';
+        pickup18.style.display = isWasatch ? '' : 'none';
+
+        // Toggle pickup location required
+        if (pickupLoc) {
+          pickupLoc.required = isApr10;
+          pickupLoc.disabled = !isApr10;
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
