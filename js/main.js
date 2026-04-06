@@ -75,24 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- Inquiry form handler ---
-  const form = document.querySelector('#inquiry-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('.btn');
-      btn.textContent = 'Message Sent!';
-      btn.style.background = 'var(--sage)';
-      btn.style.color = 'var(--cream)';
-      btn.style.borderColor = 'var(--sage)';
-      setTimeout(() => {
-        form.reset();
-        btn.textContent = 'Send Inquiry';
-        btn.style = '';
-      }, 3000);
-    });
-  }
-
   // --- Active nav link ---
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav__link').forEach(link => {

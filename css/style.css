@@ -202,7 +202,7 @@ h3 { font-size: var(--fs-h3); }
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  padding-top: 1.5rem;
+  padding-top: 6rem;
 }
 .hero__bg {
   position: absolute;
@@ -1075,6 +1075,28 @@ h3 { font-size: var(--fs-h3); }
 .footer__social a:hover {
   border-color: var(--gold);
   color: var(--gold);
+}
+.footer__credit {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: rgba(250, 247, 242, 0.55);
+  letter-spacing: 0.03em;
+}
+.footer__credit a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 700;
+}
+.footer__credit a:hover {
+  color: var(--cream);
+}
+.footer__logo {
+  display: block;
+  width: 50px;
+  height: auto;
+  margin: 0 auto 1.2rem;
+  opacity: 0.6;
 }
 .footer__bottom {
   border-top: 1px solid rgba(250, 247, 242, 0.12);

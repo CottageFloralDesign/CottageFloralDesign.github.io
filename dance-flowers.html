@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dance Flowers — Cottage Floral Design</title>
   <meta name="description" content="Order corsages, boutonnieres, and dance bouquets for prom and high school dances from Cottage Floral Design.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -92,201 +93,102 @@
             </div>
           </div>
 
-          <!-- Section: Floral Order — Grantsville/Tooele & April 17 pricing -->
+          <!-- Section: Floral Order — Standard pricing -->
           <div class="form-section" id="df-products-standard" style="display: none;">
             <div class="form-section__title">Floral Order <span style="font-family: var(--ff-body); font-size: var(--fs-small); color: var(--charcoal-light);">&mdash; Pretax</span></div>
-            <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 1.2rem;">Select all items you'd like to order.</p>
 
-            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem;">Corsages</label>
-            <div class="product-grid">
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$25 Corsage - elastic">
-                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; elastic</div></div>
-                <div class="product-option__price">$25</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$30 Corsage - slap bracelet">
-                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; slap bracelet</div><div class="product-option__detail">One size fits all, may be uncomfortable on X-small or X-large</div></div>
-                <div class="product-option__price">$30</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$35 Corsage - metal cuff">
-                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; metal cuff</div><div class="product-option__detail">One size fits all, may be loose on X-small or not fit X-large</div></div>
-                <div class="product-option__price">$35</div>
-              </label>
-            </div>
-
-            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem; margin-top: 1.5rem;">Boutonnieres</label>
-            <div class="product-grid">
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$10 Boutonniere - pin on">
-                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; pin on</div></div>
-                <div class="product-option__price">$10</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$17 Boutonniere - shotgun shell (magnet)">
-                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; shotgun shell</div><div class="product-option__detail">Magnet attachment</div></div>
-                <div class="product-option__price">$17</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$19 Boutonniere - bullet casing (magnet)">
-                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; bullet casing</div><div class="product-option__detail">Magnet attachment</div></div>
-                <div class="product-option__price">$19</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$25 Boutonniere - pocket square">
-                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; pocket square</div><div class="product-option__detail">Requires functioning pocket; confirm with date</div></div>
-                <div class="product-option__price">$25</div>
-              </label>
-            </div>
-
-            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem; margin-top: 1.5rem;">Bouquet</label>
-            <div class="product-grid">
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$50 Dance Bouquet">
-                <div class="product-option__info"><div class="product-option__name">Dance Bouquet</div></div>
-                <div class="product-option__price">$50</div>
-              </label>
-            </div>
-
-            <div class="form-group" style="margin-top: 1.5rem; margin-bottom: 0;">
-              <label for="df-ordering-std">Ordering for Both? *</label>
-              <select id="df-ordering-std" name="ordering_for" disabled>
-                <option value="" disabled selected>Select one</option>
-                <option value="Both - 10% off">Me and my date &mdash; coordinate &amp; apply 10% off</option>
-                <option value="Just mine">Just ordering my flowers</option>
+            <div class="form-group">
+              <label for="df-type-std">What Are You Ordering? *</label>
+              <select id="df-type-std" name="order_type" disabled>
+                <option value="" disabled selected>Choose an option</option>
+                <option value="Bouquet + Boutonniere">Bouquet + Boutonniere (10% off)</option>
+                <option value="Corsage + Boutonniere">Corsage + Boutonniere (10% off)</option>
+                <option value="Bouquet">Bouquet &mdash; $50</option>
+                <option value="Corsage">Corsage</option>
+                <option value="Boutonniere">Boutonniere</option>
               </select>
+            </div>
+
+            <div class="form-group" id="df-bout-std-wrap" style="display: none;">
+              <label for="df-bout-std">Boutonniere Style *</label>
+              <select id="df-bout-std" name="boutonniere_style" disabled>
+                <option value="" disabled selected>Choose a style</option>
+                <option value="Pin on - $10">Pin on &mdash; $10</option>
+                <option value="Shotgun shell (magnet) - $17">Shotgun shell (magnet) &mdash; $17</option>
+                <option value="Bullet casing (magnet) - $19">Bullet casing (magnet) &mdash; $19</option>
+                <option value="Pocket square - $25">Pocket square &mdash; $25</option>
+              </select>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.3rem;">Pocket square requires a functioning pocket; confirm with your date.</p>
+            </div>
+
+            <div class="form-group" id="df-cors-std-wrap" style="display: none;">
+              <label for="df-cors-std">Corsage Style *</label>
+              <select id="df-cors-std" name="corsage_style" disabled>
+                <option value="" disabled selected>Choose a style</option>
+                <option value="Elastic - $25">Elastic &mdash; $25</option>
+                <option value="Slap bracelet - $30">Slap bracelet &mdash; $30</option>
+                <option value="Metal cuff - $35">Metal cuff &mdash; $35</option>
+              </select>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.3rem;">Slap bracelet &amp; metal cuff: one size fits all, may not fit X-small or X-large.</p>
+              <label class="radio-label" style="margin-top: 0.8rem;">
+                <input type="checkbox" name="corsage_accent_flowers" value="Yes (+$10)" class="df-accent-cb">
+                <span>Prefer a modern, ribbon-free look (we'll create color and textural variety through the flowers themselves) +$10</span>
+              </label>
             </div>
           </div>
 
           <!-- Section: Floral Order — Wasatch pricing (hidden by default) -->
           <div class="form-section" id="df-products-wasatch" style="display: none;">
             <div class="form-section__title">Floral Order <span style="font-family: var(--ff-body); font-size: var(--fs-small); color: var(--charcoal-light);">&mdash; Pretax</span></div>
-            <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 1.2rem;">Select all items you'd like to order.</p>
 
-            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem;">Corsages</label>
-            <div class="product-grid">
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$30 Corsage - elastic (Wasatch)">
-                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; elastic</div></div>
-                <div class="product-option__price">$30</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$33 Corsage - slap bracelet (Wasatch)">
-                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; slap bracelet</div><div class="product-option__detail">One size fits all, may be uncomfortable on X-small or X-large</div></div>
-                <div class="product-option__price">$33</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$37 Corsage - metal cuff (Wasatch)">
-                <div class="product-option__info"><div class="product-option__name">Corsage &mdash; metal cuff</div><div class="product-option__detail">One size fits all, may be loose on X-small or not fit X-large</div></div>
-                <div class="product-option__price">$37</div>
-              </label>
-            </div>
-
-            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem; margin-top: 1.5rem;">Boutonnieres</label>
-            <div class="product-grid">
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$15 Boutonniere - pin on (Wasatch)">
-                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; pin on</div></div>
-                <div class="product-option__price">$15</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$25 Boutonniere - shotgun shell (Wasatch)">
-                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; shotgun shell</div><div class="product-option__detail">Magnet attachment</div></div>
-                <div class="product-option__price">$25</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$27 Boutonniere - bullet casing (Wasatch)">
-                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; bullet casing</div><div class="product-option__detail">Magnet attachment</div></div>
-                <div class="product-option__price">$27</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$30 Boutonniere - pocket square (Wasatch)">
-                <div class="product-option__info"><div class="product-option__name">Boutonniere &mdash; pocket square</div><div class="product-option__detail">Requires functioning pocket; confirm with date</div></div>
-                <div class="product-option__price">$30</div>
-              </label>
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$35 Modern Boutonniere - half lapel (Wasatch)">
-                <div class="product-option__info"><div class="product-option__name">Modern Boutonniere &mdash; half lapel</div></div>
-                <div class="product-option__price">$35</div>
-              </label>
-            </div>
-
-            <label style="display: block; font-size: var(--fs-small); letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.6rem; margin-top: 1.5rem;">Bouquet</label>
-            <div class="product-grid">
-              <label class="product-option">
-                <input type="checkbox" name="order[]" value="$50 Dance Bouquet (Wasatch)">
-                <div class="product-option__info"><div class="product-option__name">Dance Bouquet</div></div>
-                <div class="product-option__price">$50</div>
-              </label>
-            </div>
-
-            <div class="form-group" style="margin-top: 1.5rem; margin-bottom: 0;">
-              <label for="df-ordering-was">Ordering for Both? *</label>
-              <select id="df-ordering-was" name="ordering_for" disabled>
-                <option value="" disabled selected>Select one</option>
-                <option value="Both - 10% off">Me and my date &mdash; coordinate &amp; apply 10% off</option>
-                <option value="Just mine">Just ordering my flowers</option>
+            <div class="form-group">
+              <label for="df-type-was">What Are You Ordering? *</label>
+              <select id="df-type-was" name="order_type" disabled>
+                <option value="" disabled selected>Choose an option</option>
+                <option value="Bouquet + Boutonniere">Bouquet + Boutonniere (10% off)</option>
+                <option value="Corsage + Boutonniere">Corsage + Boutonniere (10% off)</option>
+                <option value="Bouquet">Bouquet &mdash; $50</option>
+                <option value="Corsage">Corsage</option>
+                <option value="Boutonniere">Boutonniere</option>
               </select>
+            </div>
+
+            <div class="form-group" id="df-bout-was-wrap" style="display: none;">
+              <label for="df-bout-was">Boutonniere Style *</label>
+              <select id="df-bout-was" name="boutonniere_style" disabled>
+                <option value="" disabled selected>Choose a style</option>
+                <option value="Pin on - $15">Pin on &mdash; $15</option>
+                <option value="Shotgun shell (magnet) - $25">Shotgun shell (magnet) &mdash; $25</option>
+                <option value="Bullet casing (magnet) - $27">Bullet casing (magnet) &mdash; $27</option>
+                <option value="Pocket square - $30">Pocket square &mdash; $30</option>
+                <option value="Half lapel - $35">Modern half lapel &mdash; $35</option>
+              </select>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.3rem;">Pocket square requires a functioning pocket; confirm with your date.</p>
+            </div>
+
+            <div class="form-group" id="df-cors-was-wrap" style="display: none;">
+              <label for="df-cors-was">Corsage Style *</label>
+              <select id="df-cors-was" name="corsage_style" disabled>
+                <option value="" disabled selected>Choose a style</option>
+                <option value="Elastic - $30">Elastic &mdash; $30</option>
+                <option value="Slap bracelet - $33">Slap bracelet &mdash; $33</option>
+                <option value="Metal cuff - $37">Metal cuff &mdash; $37</option>
+              </select>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.3rem;">Slap bracelet &amp; metal cuff: one size fits all, may not fit X-small or X-large.</p>
+              <label class="radio-label" style="margin-top: 0.8rem;">
+                <input type="checkbox" name="corsage_accent_flowers" value="Yes (+$10)" class="df-accent-cb">
+                <span>Prefer a modern, ribbon-free look (we'll create color and textural variety through the flowers themselves) +$10</span>
+              </label>
             </div>
           </div>
 
           <!-- Section: Colors -->
           <div class="form-section">
             <div class="form-section__title">Colors</div>
-
             <div class="form-group">
-              <label for="df-flower-color">Flower Color *</label>
-              <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 0.8rem;">Options not guaranteed. If I can't match your preferred color, I'll choose one that matches your accent color. White flowers work beautifully with any accent color. Flowers are a natural product and colors can vary.</p>
-              <!-- Standard color options -->
-              <select id="df-flower-color" name="flower_color">
-                <option value="" disabled selected>Choose a flower color</option>
-                <option value="White">White</option>
-                <option value="Yellow">Yellow</option>
-                <option value="Coral">Coral</option>
-                <option value="Light Pink">Light Pink</option>
-                <option value="Red">Red</option>
-                <option value="Light Blue">Light Blue</option>
-              </select>
-              <!-- Wasatch color options (hidden by default) -->
-              <select id="df-flower-color-wasatch" name="flower_color" style="display: none;" disabled>
-                <option value="" disabled selected>Choose a flower color</option>
-                <option value="Blush">Blush</option>
-                <option value="White">White</option>
-                <option value="Cream">Cream</option>
-                <option value="Yellow">Yellow</option>
-                <option value="Coral">Coral</option>
-                <option value="Light Pink">Light Pink</option>
-                <option value="Hot Pink">Hot Pink</option>
-                <option value="Red">Red</option>
-                <option value="Burgundy">Burgundy</option>
-                <option value="Light Blue">Light Blue</option>
-                <option value="Unknown - I'll text you">Unknown For Now &mdash; I'll text you</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label>Accent Color &mdash; Ribbon *</label>
-              <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 0.8rem;">Feel free to send me a picture of the dress or tie and I'll do my best to match.</p>
-              <select name="accent_color" required>
-                <option value="" disabled selected>Choose an accent color</option>
-                <option value="Don't Care/You Choose">Don't Care / You Choose</option>
-                <option value="Black">Black</option>
-                <option value="White">White</option>
-                <option value="Gold">Gold</option>
-                <option value="Silver">Silver</option>
-                <option value="Navy">Navy</option>
-                <option value="Royal Blue">Royal Blue</option>
-                <option value="Teal">Teal</option>
-                <option value="Robin's Egg/Light Blue">Robin's Egg / Light Blue</option>
-                <option value="Yellow">Yellow</option>
-                <option value="Forest/Dark Green">Forest / Dark Green</option>
-                <option value="Emerald Green">Emerald Green</option>
-                <option value="Coral">Coral</option>
-                <option value="Orange">Orange</option>
-                <option value="Blush">Blush</option>
-                <option value="Cream">Cream</option>
-              </select>
+              <label for="df-colors">What Colors Are You Wearing? *</label>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 0.8rem;">Feel free to send me a picture of the dress or tie and I'll do my best to match &mdash; <a href="mailto:cottagefd@gmail.com" style="color: var(--sage);">cottagefd@gmail.com</a></p>
+              <input type="text" id="df-colors" name="colors_wearing" required placeholder="e.g. Navy suit, blush dress">
             </div>
           </div>
 
@@ -297,14 +199,14 @@
             <!-- Default message -->
             <p id="df-pickup-default" style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-bottom: 1.5rem;">Please select a dance date above to see pickup information.</p>
 
-            <!-- April 10 pickup (hidden) -->
+            <!-- April 10 pickup (hidden) — pickup is April 9 (day before) -->
             <div id="df-pickup-apr10" style="display: none;">
               <div class="form-group">
-                <label for="df-pickup-loc">Pickup Location *</label>
+                <label for="df-pickup-loc">Pickup Location &mdash; April 9th *</label>
                 <select id="df-pickup-loc" name="pickup_location" disabled>
                   <option value="" disabled selected>Choose a pickup location</option>
-                  <option value="Soelberg's Market, Grantsville 4-5pm">Soelberg's Market &mdash; 213 E Main St, Grantsville, UT 84029 &mdash; 4&ndash;5 pm</option>
-                  <option value="Walgreen's, Tooele 5:30-6:30pm">Walgreen's &mdash; 188 N Main St, Tooele, UT 84074 &mdash; 5:30&ndash;6:30 pm</option>
+                  <option value="Soelberg's Market, Grantsville 2-3pm">Soelberg's Market &mdash; 213 E Main St, Grantsville, UT 84029 &mdash; 2&ndash;3 pm</option>
+                  <option value="Walgreen's, Tooele 3:30-4:30pm">Walgreen's &mdash; 188 N Main St, Tooele, UT 84074 &mdash; 3:30&ndash;4:30 pm</option>
                   <option value="Interested in delivery">Interested in possible delivery for extra cost</option>
                 </select>
               </div>
@@ -312,15 +214,18 @@
 
             <!-- April 17 pickup (hidden) -->
             <div id="df-pickup-apr17" style="display: none;">
-              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-bottom: 1.5rem;">Pickup locations and times will be texted to you a week before the dance.</p>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-bottom: 1.5rem;">Pickup is the day before your dance. Locations and times will be texted to you a week before.</p>
             </div>
 
             <!-- April 18 Wasatch pickup (hidden) -->
             <div id="df-pickup-apr18" style="display: none;">
               <div class="form-group">
-                <label>Pickup</label>
-                <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-bottom: 0.5rem;">10 am &ndash; 12 pm at the Heber Walmart parking lot</p>
-                <p style="color: var(--charcoal-light); font-size: var(--fs-small);">1276 S US-189, Heber City, UT 84032</p>
+                <label for="df-pickup-loc-was">Pickup Location &mdash; April 18th *</label>
+                <select id="df-pickup-loc-was" name="pickup_location" disabled>
+                  <option value="" disabled selected>Choose a pickup location</option>
+                  <option value="Dutch Fields Clubhouse 10-11am">Dutch Fields Clubhouse &mdash; E Dutch Hills Dr &mdash; 10&ndash;11 am</option>
+                  <option value="Walmart, Heber City 11:30am-12:30pm">Walmart parking lot &mdash; 1276 S US-189, Heber City, UT 84032 &mdash; 11:30 am&ndash;12:30 pm</option>
+                </select>
               </div>
             </div>
 
@@ -346,8 +251,8 @@
                 <input type="checkbox" name="terms_allergies" value="Agreed" required>
                 <span><strong>Allergies &amp; Safety:</strong> I understand that fresh flowers and greenery can cause allergic reactions, skin irritation, or staining, and the florist is not liable for these outcomes.</span>
               </label>
-              <label class="radio-label">
-                <input type="checkbox" name="terms_magnet" value="Agreed" required>
+              <label class="radio-label" id="df-terms-magnet" style="display: none;">
+                <input type="checkbox" name="terms_magnet" value="Agreed">
                 <span><strong>Magnet Boutonniere Disclaimer:</strong> I confirm that the intended wearer does not have a pacemaker, defibrillator, or other implanted medical device that could be affected by magnets.</span>
               </label>
             </div>
@@ -368,10 +273,11 @@
 
             <div class="form-group" style="text-align: center;">
               <label style="margin-bottom: 1rem;">Pay via Venmo &mdash; Total: <strong id="df-venmo-total">$0.00</strong></label>
-              <a href="assets/mothers-day/venmo.png" target="_blank">
-                <img src="assets/mothers-day/venmo.png" alt="Venmo QR code — click to enlarge" style="max-width: 320px; margin: 0 auto; border: 1px solid var(--sage-pale); cursor: pointer;">
+              <a href="assets/venmo.jpg" target="_blank">
+                <img src="assets/venmo.jpg" alt="Venmo QR code — click to enlarge" style="max-width: 320px; margin: 0 auto; border: 1px solid var(--sage-pale); cursor: pointer;">
               </a>
-              <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-top: 0.8rem;">Click to open full size &middot; Scan to pay</p>
+              <p style="color: var(--charcoal-light); font-size: var(--fs-small); margin-top: 0.8rem;">Click image to enlarge &middot; Scan to pay</p>
+              <a href="https://www.venmo.com/u/cottagefloraldesign" target="_blank" style="color: var(--sage); margin-top: 0.5rem; display: inline-block; text-decoration: underline;">Go to Venmo</a>
             </div>
 
             <div class="form-group" style="margin-top: 1.5rem;">
@@ -413,6 +319,8 @@
         <a href="https://www.instagram.com/cottagefloraldesign/" target="_blank" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
         <a href="https://www.tiktok.com/@cottagefloraldesign" target="_blank" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.98a8.21 8.21 0 004.76 1.52V7.05a4.84 4.84 0 01-1-.36z"/></svg></a>
       </div>
+      <img src="assets/logo.png" alt="Cottage Floral Design logo" class="footer__logo">
+      <div class="footer__credit">Want a site like this? Designed by Sam Nichols &mdash; <a href="https://samnichols.dev" target="_blank">samnichols.dev</a></div>
       <div class="footer__bottom">
         &copy; 2026 Cottage Floral Design &middot; Crafted with care &amp; seasonal blooms
       </div>
@@ -431,23 +339,79 @@
 
     var TAX_RATE = 0.0745;
     var VENMO_FEE = 0.02;
+    var BOUQUET_PRICE = 50;
+
+    // Elements
+    var typeStd = document.getElementById('df-type-std');
+    var typeWas = document.getElementById('df-type-was');
+    var boutStdWrap = document.getElementById('df-bout-std-wrap');
+    var boutWasWrap = document.getElementById('df-bout-was-wrap');
+    var corsStdWrap = document.getElementById('df-cors-std-wrap');
+    var corsWasWrap = document.getElementById('df-cors-was-wrap');
+    var boutStd = document.getElementById('df-bout-std');
+    var boutWas = document.getElementById('df-bout-was');
+    var corsStd = document.getElementById('df-cors-std');
+    var corsWas = document.getElementById('df-cors-was');
+
+    function priceFromSelect(sel) {
+      if (!sel || sel.disabled || !sel.value) return 0;
+      var m = sel.value.match(/\$(\d+)/);
+      return m ? parseInt(m[1]) : 0;
+    }
+
+    function toggleSubDropdowns(typeVal, boutWrap, boutSel, corsWrap, corsSel) {
+      var hasBout = typeVal.indexOf('Boutonniere') > -1;
+      var hasCors = typeVal.indexOf('Corsage') > -1;
+
+      boutWrap.style.display = hasBout ? '' : 'none';
+      boutSel.disabled = !hasBout;
+      boutSel.required = hasBout;
+      if (!hasBout) boutSel.selectedIndex = 0;
+
+      corsWrap.style.display = hasCors ? '' : 'none';
+      corsSel.disabled = !hasCors;
+      corsSel.required = hasCors;
+      if (!hasCors) corsSel.selectedIndex = 0;
+    }
 
     function updateTotal() {
+      // Determine which section is active
+      var isWasatch = typeWas && !typeWas.disabled;
+      var typeSel = isWasatch ? typeWas : typeStd;
+      var boutSel = isWasatch ? boutWas : boutStd;
+      var corsSel = isWasatch ? corsWas : corsStd;
+
+      if (!typeSel || typeSel.disabled || !typeSel.value) {
+        document.getElementById('df-payment').style.display = 'none';
+        return;
+      }
+
+      var typeVal = typeSel.value;
       var subtotal = 0;
-      // Only count checked items in visible product sections
-      document.querySelectorAll('.form-section[style=""] .product-option input[type="checkbox"]:checked, .form-section:not([style*="none"]) .product-option input[type="checkbox"]:checked').forEach(function(cb) {
-        var match = cb.value.match(/\$(\d+)/);
-        if (match) subtotal += parseInt(match[1]);
-      });
+      var hasDiscount = typeVal.indexOf('+') > -1;
 
-      // Check if ordering for both (10% off)
-      var orderingStd = document.getElementById('df-ordering-std');
-      var orderingWas = document.getElementById('df-ordering-was');
-      var coupleDiscount = false;
-      if (orderingStd && !orderingStd.disabled && orderingStd.value === 'Both - 10% off') coupleDiscount = true;
-      if (orderingWas && !orderingWas.disabled && orderingWas.value === 'Both - 10% off') coupleDiscount = true;
+      if (typeVal.indexOf('Bouquet') > -1) subtotal += BOUQUET_PRICE;
+      if (typeVal.indexOf('Boutonniere') > -1) subtotal += priceFromSelect(boutSel);
+      if (typeVal.indexOf('Corsage') > -1) {
+        subtotal += priceFromSelect(corsSel);
+        var accentCb = (isWasatch ? corsWasWrap : corsStdWrap).querySelector('.df-accent-cb');
+        if (accentCb && accentCb.checked) subtotal += 10;
+      }
 
-      var discount = coupleDiscount ? subtotal * 0.10 : 0;
+      // Need at least the sub-selections to be made before showing total
+      if (typeVal.indexOf('Boutonniere') > -1 && !priceFromSelect(boutSel)) { document.getElementById('df-payment').style.display = 'none'; return; }
+      if (typeVal.indexOf('Corsage') > -1 && !priceFromSelect(corsSel)) { document.getElementById('df-payment').style.display = 'none'; return; }
+
+      // Show magnet disclaimer only for magnet boutonnieres (shotgun shell or bullet casing)
+      var magnetDisclaimer = document.getElementById('df-terms-magnet');
+      var magnetInput = magnetDisclaimer.querySelector('input');
+      var boutVal = boutSel && !boutSel.disabled ? boutSel.value : '';
+      var isMagnet = boutVal.indexOf('magnet') > -1;
+      magnetDisclaimer.style.display = isMagnet ? '' : 'none';
+      magnetInput.required = isMagnet;
+      if (!isMagnet) magnetInput.checked = false;
+
+      var discount = hasDiscount ? subtotal * 0.10 : 0;
       var afterDiscount = subtotal - discount;
       var tax = afterDiscount * TAX_RATE;
       var subtotalWithTax = afterDiscount + tax;
@@ -455,49 +419,58 @@
       var total = subtotalWithTax + venmoFee;
 
       var paymentSection = document.getElementById('df-payment');
-      if (subtotal > 0) {
-        paymentSection.style.display = '';
-        var html = 'Subtotal: $' + subtotal.toFixed(2) + '<br>';
-        if (coupleDiscount) {
-          html += '<span style="color: var(--sage);">Couple discount (10% off): -$' + discount.toFixed(2) + '</span><br>';
-        }
-        html += 'Sales tax (7.45%): $' + tax.toFixed(2) + '<br>';
-        html += 'Venmo fee (2%): $' + venmoFee.toFixed(2) + '<br>';
-        html += '<strong style="color: var(--charcoal); font-size: 1.1rem;">Total: $' + total.toFixed(2) + '</strong>';
-        document.getElementById('df-order-total').querySelector('div').innerHTML = html;
-        document.getElementById('df-venmo-total').textContent = '$' + total.toFixed(2);
-      } else {
-        paymentSection.style.display = 'none';
+      paymentSection.style.display = '';
+      var html = 'Subtotal: $' + subtotal.toFixed(2) + '<br>';
+      if (hasDiscount) {
+        html += '<span style="color: var(--sage);">Ordering both discount (10% off): -$' + discount.toFixed(2) + '</span><br>';
       }
+      html += 'Sales tax (7.45%): $' + tax.toFixed(2) + '<br>';
+      html += 'Venmo fee (2%): $' + venmoFee.toFixed(2) + '<br>';
+      html += '<strong style="color: var(--charcoal); font-size: 1.1rem;">Total: $' + total.toFixed(2) + '</strong>';
+      document.getElementById('df-order-total').querySelector('div').innerHTML = html;
+      document.getElementById('df-venmo-total').textContent = '$' + total.toFixed(2);
     }
 
-    // Highlight selected product options and update total
-    document.querySelectorAll('.product-option input').forEach(function(input) {
-      input.addEventListener('change', function() {
-        if (this.type === 'checkbox') {
-          this.closest('.product-option').classList.toggle('selected', this.checked);
-          updateTotal();
-        }
-      });
+    // Order type change handlers
+    typeStd.addEventListener('change', function() {
+      toggleSubDropdowns(this.value, boutStdWrap, boutStd, corsStdWrap, corsStd);
+      updateTotal();
+    });
+    typeWas.addEventListener('change', function() {
+      toggleSubDropdowns(this.value, boutWasWrap, boutWas, corsWasWrap, corsWas);
+      updateTotal();
     });
 
-    // Recalculate when ordering-for-both dropdown changes
-    document.getElementById('df-ordering-std').addEventListener('change', updateTotal);
-    document.getElementById('df-ordering-was').addEventListener('change', updateTotal);
+    // Sub-dropdown and accent checkbox change handlers
+    [boutStd, boutWas, corsStd, corsWas].forEach(function(sel) {
+      sel.addEventListener('change', updateTotal);
+    });
+    document.querySelectorAll('.df-accent-cb').forEach(function(cb) {
+      cb.addEventListener('change', updateTotal);
+    });
 
     // Dance date switching logic
     var dateSelect = document.getElementById('df-date');
     var stdProducts = document.getElementById('df-products-standard');
     var wasProducts = document.getElementById('df-products-wasatch');
-    var flowerStd = document.getElementById('df-flower-color');
-    var flowerWas = document.getElementById('df-flower-color-wasatch');
     var pickupDefault = document.getElementById('df-pickup-default');
     var pickup10 = document.getElementById('df-pickup-apr10');
     var pickup17 = document.getElementById('df-pickup-apr17');
     var pickup18 = document.getElementById('df-pickup-apr18');
     var pickupLoc = document.getElementById('df-pickup-loc');
-    var orderingStd = document.getElementById('df-ordering-std');
-    var orderingWas = document.getElementById('df-ordering-was');
+    var pickupLocWas = document.getElementById('df-pickup-loc-was');
+
+    function resetSection(typeSel, boutWrap, boutSel, corsWrap, corsSel) {
+      typeSel.selectedIndex = 0;
+      boutSel.selectedIndex = 0;
+      corsSel.selectedIndex = 0;
+      boutWrap.style.display = 'none';
+      boutSel.disabled = true;
+      boutSel.required = false;
+      corsWrap.style.display = 'none';
+      corsSel.disabled = true;
+      corsSel.required = false;
+    }
 
     if (dateSelect) {
       dateSelect.addEventListener('change', function() {
@@ -506,34 +479,20 @@
         var isApr10 = val.indexOf('April 10') > -1;
         var isApr17 = val.indexOf('April 17') > -1;
 
-        // Clear previous selections
-        document.querySelectorAll('.product-option input:checked').forEach(function(cb) {
-          cb.checked = false;
-          cb.closest('.product-option').classList.remove('selected');
-        });
+        // Reset both sections
+        resetSection(typeStd, boutStdWrap, boutStd, corsStdWrap, corsStd);
+        resetSection(typeWas, boutWasWrap, boutWas, corsWasWrap, corsWas);
         updateTotal();
 
-        // Toggle product sections — show the right one
+        // Toggle product sections
         stdProducts.style.display = isWasatch ? 'none' : '';
         wasProducts.style.display = isWasatch ? '' : 'none';
 
-        // Toggle required/disabled on ordering dropdowns
-        orderingStd.required = !isWasatch;
-        orderingStd.disabled = isWasatch;
-        orderingWas.required = isWasatch;
-        orderingWas.disabled = !isWasatch;
-
-        // Toggle required on flower color
-        flowerStd.required = !isWasatch;
-        flowerWas.required = isWasatch;
-
-        // Toggle flower color dropdowns
-        flowerStd.style.display = isWasatch ? 'none' : '';
-        flowerStd.required = !isWasatch;
-        flowerStd.disabled = isWasatch;
-        flowerWas.style.display = isWasatch ? '' : 'none';
-        flowerWas.required = isWasatch;
-        flowerWas.disabled = !isWasatch;
+        // Toggle type dropdowns
+        typeStd.disabled = isWasatch;
+        typeStd.required = !isWasatch;
+        typeWas.disabled = !isWasatch;
+        typeWas.required = isWasatch;
 
         // Toggle pickup sections
         pickupDefault.style.display = 'none';
@@ -541,10 +500,13 @@
         pickup17.style.display = isApr17 ? '' : 'none';
         pickup18.style.display = isWasatch ? '' : 'none';
 
-        // Toggle pickup location required
         if (pickupLoc) {
           pickupLoc.required = isApr10;
           pickupLoc.disabled = !isApr10;
+        }
+        if (pickupLocWas) {
+          pickupLocWas.required = isWasatch;
+          pickupLocWas.disabled = !isWasatch;
         }
       });
     }
