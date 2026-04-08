@@ -171,6 +171,10 @@
                   <input type="text" id="md-custom-message" name="custom_message" placeholder="Max 10 characters" maxlength="10">
                   <p style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-top: 0.3rem;">10 character limit</p>
                 </div>
+                <label class="radio-label">
+                  <input type="radio" name="message_type" value="none">
+                  <span>No message</span>
+                </label>
               </div>
             </div>
           </div>
@@ -341,9 +345,11 @@
     var customInput = document.getElementById('md-custom-message');
 
     function updateMessageUI() {
-      var isCustom = document.querySelector('input[name="message_type"]:checked').value === 'custom';
-      presetSelect.style.display = isCustom ? 'none' : '';
-      presetSelect.disabled = isCustom;
+      var selected = document.querySelector('input[name="message_type"]:checked').value;
+      var isCustom = selected === 'custom';
+      var isNone = selected === 'none';
+      presetSelect.style.display = (isCustom || isNone) ? 'none' : '';
+      presetSelect.disabled = isCustom || isNone;
       customWrap.style.display = isCustom ? '' : 'none';
       customInput.required = isCustom;
       if (!isCustom) customInput.value = '';
