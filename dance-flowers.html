@@ -77,7 +77,6 @@
               <label for="df-date">Dance Date *</label>
               <select id="df-date" name="dance_date" required>
                 <option value="" disabled selected>Choose your dance date</option>
-                <option value="April 10 - Grantsville/Tooele">April 10th &mdash; Grantsville / Tooele</option>
                 <option value="April 17">April 17th</option>
                 <option value="April 18 - Wasatch">April 18th &mdash; Wasatch High School</option>
               </select>
@@ -200,19 +199,6 @@
 
             <!-- Default message -->
             <p id="df-pickup-default" style="color: var(--charcoal-light); font-size: var(--fs-small); font-style: italic; margin-bottom: 1.5rem;">Please select a dance date above to see pickup information.</p>
-
-            <!-- April 10 pickup (hidden) — pickup is April 9 (day before) -->
-            <div id="df-pickup-apr10" style="display: none;">
-              <div class="form-group">
-                <label for="df-pickup-loc">Pickup Location &mdash; April 9th *</label>
-                <select id="df-pickup-loc" name="pickup_location" disabled>
-                  <option value="" disabled selected>Choose a pickup location</option>
-                  <option value="Soelberg's Market, Grantsville 2-3pm">Soelberg's Market &mdash; 213 E Main St, Grantsville, UT 84029 &mdash; 2&ndash;3 pm</option>
-                  <option value="Walgreen's, Tooele 3:30-4:30pm">Walgreen's &mdash; 188 N Main St, Tooele, UT 84074 &mdash; 3:30&ndash;4:30 pm</option>
-                  <option value="Interested in delivery">Interested in possible delivery for extra cost</option>
-                </select>
-              </div>
-            </div>
 
             <!-- April 17 pickup (hidden) -->
             <div id="df-pickup-apr17" style="display: none;">
@@ -460,10 +446,8 @@
     var stdProducts = document.getElementById('df-products-standard');
     var wasProducts = document.getElementById('df-products-wasatch');
     var pickupDefault = document.getElementById('df-pickup-default');
-    var pickup10 = document.getElementById('df-pickup-apr10');
     var pickup17 = document.getElementById('df-pickup-apr17');
     var pickup18 = document.getElementById('df-pickup-apr18');
-    var pickupLoc = document.getElementById('df-pickup-loc');
     var pickupLocWas = document.getElementById('df-pickup-loc-was');
 
     function resetSection(typeSel, boutWrap, boutSel, corsWrap, corsSel) {
@@ -482,7 +466,6 @@
       dateSelect.addEventListener('change', function() {
         var val = this.value;
         var isWasatch = val.indexOf('Wasatch') > -1;
-        var isApr10 = val.indexOf('April 10') > -1;
         var isApr17 = val.indexOf('April 17') > -1;
 
         // Reset both sections
@@ -502,14 +485,9 @@
 
         // Toggle pickup sections
         pickupDefault.style.display = 'none';
-        pickup10.style.display = isApr10 ? '' : 'none';
         pickup17.style.display = isApr17 ? '' : 'none';
         pickup18.style.display = isWasatch ? '' : 'none';
 
-        if (pickupLoc) {
-          pickupLoc.required = isApr10;
-          pickupLoc.disabled = !isApr10;
-        }
         if (pickupLocWas) {
           pickupLocWas.required = isWasatch;
           pickupLocWas.disabled = !isWasatch;
