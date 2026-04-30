@@ -1,0 +1,293 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/portfolio"
+public_folder: "/assets/portfolio"
+
+site_url: "{{SITE_URL}}"
+display_url: "{{SITE_URL}}"
+logo_url: /assets/logo.png
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "_data/home.yml"
+        name: "home"
+        label: "Home Page"
+        fields:
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Page title", name: "title", widget: "string", hint: "60 chars max — appears in browser tab and Google results" }
+              - { label: "Meta description", name: "description", widget: "text", pattern: ['.{50,160}', "Aim for 50-160 characters"] }
+              - { label: "OG image (social sharing)", name: "og_image", widget: "image", required: false }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Subtitle (small text above title)", name: "subtitle", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Button label (CTA)", name: "cta", widget: "string" }
+              - { label: "Background image", name: "image", widget: "image", required: true }
+              - { label: "Image alt text", name: "image_alt", widget: "string", required: true, hint: "Describe the image for SEO/accessibility" }
+          - { label: "Testimonial marquee", name: "testimonial_marquee", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+          - label: "Why us section"
+            name: "why"
+            widget: "object"
+            fields:
+              - { label: "Section label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Body", name: "body", widget: "text" }
+          - label: "Approach section"
+            name: "approach"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body text", name: "text", widget: "text" }
+              - { label: "Button label", name: "cta", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image alt text", name: "image_alt", widget: "string", required: true }
+          - label: "Process section"
+            name: "process"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Step number", name: "number", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Body", name: "body", widget: "text" }
+          - { label: "Services marquee", name: "services_marquee", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+          - label: "Portfolio preview"
+            name: "portfolio_preview"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "text", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image alt text", name: "image_alt", widget: "string", required: true }
+          - label: "Bottom CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "text", widget: "text" }
+              - { label: "Button label", name: "button", widget: "string" }
+
+      - file: "_data/about.yml"
+        name: "about"
+        label: "About Page"
+        fields:
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Page title", name: "title", widget: "string" }
+              - { label: "Meta description", name: "description", widget: "text", pattern: ['.{50,160}', "Aim for 50-160 characters"] }
+              - { label: "OG image", name: "og_image", widget: "image", required: false }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Background image", name: "image", widget: "image" }
+          - label: "Designer"
+            name: "designer"
+            widget: "object"
+            fields:
+              - { label: "Photo", name: "photo", widget: "image" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Title (e.g., 'Owner & Lead Designer')", name: "title", widget: "string" }
+              - { label: "Bio (HTML allowed)", name: "bio_html", widget: "markdown" }
+          - label: "Philosophy section"
+            name: "philosophy"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Values"
+                name: "values"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Body", name: "body", widget: "text" }
+          - label: "Local sourcing section"
+            name: "local"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "text", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image alt text", name: "image_alt", widget: "string", required: true }
+          - { label: "Testimonial marquee", name: "testimonial_marquee", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "text", widget: "text" }
+          - { label: "Flower icon (HTML/SVG)", name: "flower_icon", widget: "string" }
+
+      - file: "_data/portfolio_page.yml"
+        name: "portfolio_page"
+        label: "Portfolio Page (listing)"
+        fields:
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Page title", name: "title", widget: "string" }
+              - { label: "Meta description", name: "description", widget: "text", pattern: ['.{50,160}', "Aim for 50-160 characters"] }
+              - { label: "OG image", name: "og_image", widget: "image", required: false }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Background image", name: "image", widget: "image" }
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "text", widget: "text" }
+          - { label: "Flowers marquee", name: "flowers_marquee", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "text", widget: "text" }
+
+      - file: "_data/inquiry.yml"
+        name: "inquiry"
+        label: "Inquiry Page"
+        fields:
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Page title", name: "title", widget: "string" }
+              - { label: "Meta description", name: "description", widget: "text", pattern: ['.{50,160}', "Aim for 50-160 characters"] }
+              - { label: "OG image", name: "og_image", widget: "image", required: false }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Background image", name: "image", widget: "image" }
+          - { label: "Inquiry form HTML embed", name: "form_embed_html", widget: "text", hint: "Paste the embed code from your form provider" }
+          - { label: "Testimonial marquee", name: "testimonial_marquee", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+
+  - name: "portfolio"
+    label: "Portfolio (Weddings)"
+    label_singular: "Wedding"
+    folder: "content/portfolio"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    preview_path: "portfolio/{{slug}}"
+    media_folder: "/assets/portfolio/{{slug}}"
+    public_folder: "/assets/portfolio/{{slug}}"
+    fields:
+      - { label: "Title (couple names)", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Location (e.g., Snowbird, UT)", name: "location", widget: "string" }
+      - { label: "Venue", name: "venue", widget: "string" }
+      - { label: "Season", name: "season", widget: "select", options: ["Spring", "Summer", "Fall", "Winter", "Late summer", "Early spring"] }
+      - { label: "Color palette", name: "palette", widget: "list", field: { label: "Color", name: "color", widget: "string" } }
+      - { label: "Hero image", name: "hero_image", widget: "image", required: true }
+      - { label: "Hero image alt text", name: "hero_image_alt", widget: "string", required: true, hint: "Describe the image. Include venue/city when natural — helps Google find your work." }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image", required: true }
+          - { label: "Caption (visible on page)", name: "caption", widget: "string" }
+          - { label: "Alt text (SEO + accessibility)", name: "alt", widget: "string", required: true }
+      - label: "SEO"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Page title", name: "title", widget: "string", hint: "60 chars max" }
+          - { label: "Meta description", name: "description", widget: "text", pattern: ['.{50,160}', "Aim for 50-160 characters"] }
+      - { label: "Story (the writeup)", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "_data/site.yml"
+        name: "site"
+        label: "Business info, location, theme"
+        fields:
+          - { label: "Business name", name: "business_name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Site URL", name: "url", widget: "string" }
+          - { label: "Announcement bar (set blank to hide)", name: "announcement", widget: "string", required: false }
+          - label: "Location"
+            name: "location"
+            widget: "object"
+            fields:
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "State/Region (e.g., UT)", name: "region", widget: "string" }
+              - { label: "Service areas", name: "service_areas", widget: "list", field: { label: "Area", name: "area", widget: "string" } }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string", required: false }
+          - label: "Social links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "Pinterest URL", name: "pinterest", widget: "string", required: false }
+          - label: "Navigation"
+            name: "nav"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL path (e.g., /about/)", name: "url", widget: "string" }
+          - label: "Theme (colors and fonts)"
+            name: "theme"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Primary color", name: "primary", widget: "string" }
+              - { label: "Primary light", name: "primary_light", widget: "string" }
+              - { label: "Primary pale", name: "primary_pale", widget: "string" }
+              - { label: "Accent", name: "accent", widget: "string" }
+              - { label: "Accent light", name: "accent_light", widget: "string" }
+              - { label: "Background", name: "bg", widget: "string" }
+              - { label: "Background dark", name: "bg_dark", widget: "string" }
+              - { label: "Text color", name: "text", widget: "string" }
+              - { label: "Text light", name: "text_light", widget: "string" }
+              - { label: "Highlight", name: "highlight", widget: "string" }
+              - { label: "Display font CSS value", name: "ff_display", widget: "string" }
+              - { label: "Body font CSS value", name: "ff_body", widget: "string" }
+              - { label: "Google Fonts URL", name: "google_fonts_url", widget: "string", required: false }
+
+      - file: "_data/seo_defaults.yml"
+        name: "seo_defaults"
+        label: "SEO Defaults"
+        fields:
+          - { label: "Default OG image (used when a page doesn't set one)", name: "default_og_image", widget: "image" }
+          - { label: "Default keywords", name: "default_keywords", widget: "string" }
