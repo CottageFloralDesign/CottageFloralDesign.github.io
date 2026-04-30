@@ -13,9 +13,9 @@
       {% if site.contact.phone %}<a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a>{% endif %}
     </div>
     <div class="footer__social">
-      {% if site.social.instagram %}<a href="{{ site.social.instagram }}" rel="noopener" target="_blank">Instagram</a>{% endif %}
-      {% if site.social.pinterest %}<a href="{{ site.social.pinterest }}" rel="noopener" target="_blank">Pinterest</a>{% endif %}
+      {% if site.social.instagram %}<a href="{{ site.social.instagram }}" rel="noopener noreferrer" target="_blank">Instagram</a>{% endif %}
+      {% if site.social.pinterest %}<a href="{{ site.social.pinterest }}" rel="noopener noreferrer" target="_blank">Pinterest</a>{% endif %}
     </div>
-    <p class="footer__copy">© <span id="year"></span> {{ site.business_name }}. All rights reserved.</p>
+    <p class="footer__copy">© {{ currentYear }} {{ site.business_name }}. All rights reserved.</p>
   </div>
 </footer>

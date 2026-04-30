@@ -4,6 +4,9 @@ module.exports = function(eleventyConfig) {
   // Support YAML data files (_data/*.yml)
   eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
 
+  // Bake current year into templates at build time
+  eleventyConfig.addGlobalData("currentYear", () => new Date().getFullYear());
+
   // Pass-through static assets
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
