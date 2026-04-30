@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import yaml from "../node_modules/js-yaml/dist/js-yaml.js";
+import yaml from "js-yaml";
 
 test("site.yml has required top-level keys", () => {
   const raw = readFileSync(new URL("../_data/site.yml", import.meta.url), "utf-8");
