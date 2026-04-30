@@ -1,10 +1,5 @@
 ---
 layout: layouts/base.njk
-eleventyComputed:
-  seo:
-    title: "{{ seo.title or (title + ' Wedding | ' + site.business_name) }}"
-    description: "{{ seo.description }}"
-    og_image: "{{ hero_image }}"
 ---
 <section class="page-hero">
   <div class="hero__bg" role="img" aria-label="{{ hero_image_alt }}" style="background-image: url('{{ hero_image }}');"></div>
