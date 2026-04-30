@@ -1,0 +1,15 @@
+seo:
+  title: "{{INQUIRY_SEO_TITLE}}"
+  description: "{{INQUIRY_META_DESCRIPTION}}"
+  og_image: "{{INQUIRY_OG_IMAGE}}"
+
+hero:
+  image: "{{INQUIRY_HERO_IMAGE}}"
+  image_alt: "{{INQUIRY_HERO_IMAGE_ALT}}"
+
+form_embed_html: "{{INQUIRY_FORM_EMBED}}"
+
+testimonial_marquee:
+  - "{{INQUIRY_TESTIMONIAL_1}}"
+  - "{{INQUIRY_TESTIMONIAL_2}}"
+  - "{{INQUIRY_TESTIMONIAL_3}}"
