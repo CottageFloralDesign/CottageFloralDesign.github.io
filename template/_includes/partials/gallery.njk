@@ -1,0 +1,8 @@
+<div class="gallery">
+  {% for item in items %}
+  <figure class="gallery__item reveal">
+    <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy">
+    {% if item.caption %}<figcaption class="gallery__caption">{{ item.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endfor %}
+</div>

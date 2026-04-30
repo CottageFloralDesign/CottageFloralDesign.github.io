@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+eleventyComputed:
+  seo:
+    title: "{{ seo.title or (title + ' Wedding | ' + site.business_name) }}"
+    description: "{{ seo.description }}"
+    og_image: "{{ hero_image }}"
+---
+<section class="page-hero">
+  <div class="hero__bg" role="img" aria-label="{{ hero_image_alt }}" style="background-image: url('{{ hero_image }}');"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <div class="hero__subtitle">{{ season }} Wedding</div>
+    <div class="hero__divider"></div>
+    <h1 class="hero__title">{{ title }}</h1>
+    {% if venue or location %}
+    <p class="page-hero__meta">{% if venue %}{{ venue }}{% endif %}{% if venue and location %} · {% endif %}{% if location %}{{ location }}{% endif %}</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container portfolio-entry__story">
+    <div class="reveal">
+      {{ content | safe }}
+    </div>
+    {% if palette and palette.length %}
+    <div class="portfolio-entry__palette reveal">
+      <p class="feature__label">Color Palette</p>
+      <ul class="palette-swatches">
+        {% for color in palette %}
+        <li>{{ color }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% if gallery and gallery.length %}
+<section class="section section--white">
+  <div class="container">
+    {% set items = gallery %}
+    {% include "partials/gallery.njk" %}
+  </div>
+</section>
+{% endif %}
+
+<section class="cta section--bg reveal">
+  <h2>Ready to plan yours?</h2>
+  <p>Let's create something meaningful together.</p>
+  <a href="/inquiry/" class="btn btn--filled">Start Your Inquiry</a>
+</section>
