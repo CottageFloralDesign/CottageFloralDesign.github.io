@@ -23,6 +23,12 @@ test("admin config has git-gateway backend", () => {
   assert.equal(cfg.backend.name, "git-gateway");
 });
 
+test("admin config has editorial_workflow publish mode", () => {
+  const raw = readFileSync(join(TEMPLATE_DIR, "admin/config.yml"), "utf-8");
+  const cfg = yaml.load(raw);
+  assert.equal(cfg.publish_mode, "editorial_workflow");
+});
+
 test("admin config has portfolio collection with required alt fields", () => {
   const raw = readFileSync(join(TEMPLATE_DIR, "admin/config.yml"), "utf-8");
   const cfg = yaml.load(raw);
