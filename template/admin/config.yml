@@ -290,4 +290,3 @@ collections:
         label: "SEO Defaults"
         fields:
           - { label: "Default OG image (used when a page doesn't set one)", name: "default_og_image", widget: "image" }
-          - { label: "Default keywords", name: "default_keywords", widget: "string" }

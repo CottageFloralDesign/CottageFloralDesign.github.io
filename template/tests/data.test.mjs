@@ -20,5 +20,4 @@ test("seo_defaults.yml has required defaults", () => {
   const raw = readFileSync(new URL("../_data/seo_defaults.yml", import.meta.url), "utf-8");
   const seo = yaml.load(raw);
   assert.ok(seo.default_og_image, "default_og_image required");
-  assert.ok(seo.default_keywords, "default_keywords required");
 });

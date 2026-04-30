@@ -52,12 +52,12 @@ Aim for a short, descriptive sentence. Don't stuff keywords.
 
 ## Publishing changes
 
-The CMS uses an "Editorial Workflow" with three states:
+The CMS uses an "Editorial Workflow" with three states plus a publish action:
 
 - **Draft** — your work in progress, not yet visible
 - **In Review** — ready to look over before publishing
 - **Ready** — approved, ready to go live
-- Click **Publish** when ready
+- Then click **Publish** when ready
 
 Once you publish, the site rebuilds automatically. Wait 30-60 seconds and refresh your live site to see the change.
 
