@@ -18,7 +18,7 @@ test("home page renders nav and footer", () => {
   assert.match(html, /class="footer"/);
 });
 
-test("home page seo title falls back to default", () => {
+test("home page seo title comes from home.yml seo block", () => {
   const html = readOutput("index.html");
-  assert.match(html, /<title>[^<]+<\/title>/);
+  assert.match(html, /<title>\{\{HOME_SEO_TITLE\}\}<\/title>/);
 });
