@@ -203,7 +203,7 @@ Rendered once in `base.njk`, populated entirely from `site.yml`:
 
 ### Per-portfolio-entry schema
 
-`Event` type with location, date, venue — adds rich snippets to Google results for individual wedding pages.
+Structured data on each wedding page (`Article` or `ImageGallery` — implementation chooses based on current Google guidance for past project showcases) including location, date, and venue. Adds rich snippets to Google results for individual wedding pages.
 
 ### Auto-generated files
 
@@ -426,6 +426,10 @@ For local CMS testing: set `local_backend: true` in `admin/config.yml`, run `npx
 | CMS-friendliness of existing copy | Field shapes in CMS config match actual content shapes; complex blocks rendered as markdown body. |
 | Netlify Identity in maintenance mode | Documented fallback: external OAuth (Auth0/Clerk) or migration to Sveltia CMS. Not blocking for v1. |
 | Client confusion at handoff | `HANDOFF.md` walkthrough, plus a one-time live walkthrough during transfer. |
+
+## Implementation note
+
+This spec covers two distinct deliverables (template conversion, then Cottage Floral migration). The implementation plan may split these into two sequential plans — the template must be solid before regenerating Cottage Floral from it.
 
 ## Out of scope
 
