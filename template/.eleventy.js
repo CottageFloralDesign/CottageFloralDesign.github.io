@@ -7,6 +7,12 @@ module.exports = function(eleventyConfig) {
   // Bake current year into templates at build time
   eleventyConfig.addGlobalData("currentYear", () => new Date().getFullYear());
 
+  // Convert a date to ISO 8601 string for schema.org
+  eleventyConfig.addFilter("toISOString", (date) => {
+    if (!date) return "";
+    return new Date(date).toISOString();
+  });
+
   // Pass-through static assets
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");

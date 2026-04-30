@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  "name": "{{ site.business_name }}",
+  "url": "{{ site.url }}",
+  "telephone": "{{ site.contact.phone }}",
+  "email": "{{ site.contact.email }}",
+  "image": "{{ site.url }}{{ seo_defaults.default_og_image }}",
+  "areaServed": [
+    {%- for area in site.location.service_areas -%}
+    "{{ area }}"{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ site.location.city }}",
+    "addressRegion": "{{ site.location.region }}"
+  },
+  "sameAs": [
+    {%- if site.social.instagram -%}"{{ site.social.instagram }}"{%- endif -%}
+    {%- if site.social.instagram and site.social.pinterest -%},{%- endif -%}
+    {%- if site.social.pinterest -%}"{{ site.social.pinterest }}"{%- endif -%}
+  ]
+}
+</script>

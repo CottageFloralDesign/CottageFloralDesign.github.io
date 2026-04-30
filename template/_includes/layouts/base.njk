@@ -24,6 +24,10 @@
   {% if site.theme.google_fonts_url %}
   <link href="{{ site.theme.google_fonts_url }}" rel="stylesheet">
   {% endif %}
+  {% include "partials/schema-local-business.njk" %}
+  {% if schemaType == "Article" %}
+    {% include "partials/schema-article.njk" %}
+  {% endif %}
 </head>
 <body>
   {% include "partials/nav.njk" %}
