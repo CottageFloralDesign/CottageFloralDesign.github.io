@@ -7,6 +7,7 @@
     "build": "eleventy",
     "dev": "eleventy --serve",
     "clean": "rm -rf _site",
+    "pretest": "rm -rf _site && eleventy",
     "test": "node --test tests/"
   },
   "devDependencies": {
