@@ -1,0 +1,67 @@
+seo:
+  title: "{{HOME_SEO_TITLE}}"
+  description: "{{HOME_META_DESCRIPTION}}"
+  og_image: "{{HOME_OG_IMAGE}}"
+
+hero:
+  subtitle: "{{TAGLINE}}"
+  title: "{{HERO_TITLE}}"
+  description: "{{HERO_DESCRIPTION}}"
+  cta: "{{HERO_CTA}}"
+  image: "{{HERO_IMAGE}}"
+  image_alt: "{{HERO_IMAGE_ALT}}"
+
+testimonial_marquee:
+  - "{{TESTIMONIAL_1}}"
+  - "{{TESTIMONIAL_2}}"
+  - "{{TESTIMONIAL_3}}"
+  - "{{TESTIMONIAL_4}}"
+
+why:
+  label: "{{WHY_LABEL}}"
+  heading: "{{WHY_HEADING}}"
+  cards:
+    - title: "{{WHY_CARD_1_TITLE}}"
+      body: "{{WHY_CARD_1_BODY}}"
+    - title: "{{WHY_CARD_2_TITLE}}"
+      body: "{{WHY_CARD_2_BODY}}"
+    - title: "{{WHY_CARD_3_TITLE}}"
+      body: "{{WHY_CARD_3_BODY}}"
+
+approach:
+  label: "{{APPROACH_LABEL}}"
+  heading: "{{APPROACH_HEADING}}"
+  text: "{{APPROACH_TEXT}}"
+  cta: "{{APPROACH_CTA}}"
+  image: "{{APPROACH_IMAGE}}"
+  image_alt: "{{APPROACH_IMAGE_ALT}}"
+
+process:
+  heading: "{{PROCESS_HEADING}}"
+  steps:
+    - number: "01"
+      title: "{{PROCESS_1_TITLE}}"
+      body: "{{PROCESS_1_BODY}}"
+    - number: "02"
+      title: "{{PROCESS_2_TITLE}}"
+      body: "{{PROCESS_2_BODY}}"
+    - number: "03"
+      title: "{{PROCESS_3_TITLE}}"
+      body: "{{PROCESS_3_BODY}}"
+
+services_marquee:
+  - "{{SERVICE_1}}"
+  - "{{SERVICE_2}}"
+  - "{{SERVICE_3}}"
+  - "{{SERVICE_4}}"
+
+portfolio_preview:
+  heading: "{{PORTFOLIO_HEADING}}"
+  text: "{{PORTFOLIO_TEXT}}"
+  image: "{{PORTFOLIO_PREVIEW_IMAGE}}"
+  image_alt: "{{PORTFOLIO_PREVIEW_ALT}}"
+
+cta:
+  heading: "{{CTA_HEADING}}"
+  text: "{{CTA_TEXT}}"
+  button: "{{CTA_BUTTON}}"

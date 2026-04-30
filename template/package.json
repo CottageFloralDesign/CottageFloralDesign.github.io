@@ -1,0 +1,17 @@
+{
+  "name": "florist-site-template",
+  "version": "1.0.0",
+  "description": "Eleventy + Decap CMS starter for florist websites",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "clean": "rm -rf _site",
+    "pretest": "rm -rf _site && eleventy",
+    "test": "node --test tests/"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "js-yaml": "^4.1.1"
+  }
+}

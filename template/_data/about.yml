@@ -1,0 +1,42 @@
+seo:
+  title: "{{ABOUT_SEO_TITLE}}"
+  description: "{{ABOUT_META_DESCRIPTION}}"
+  og_image: "{{ABOUT_OG_IMAGE}}"
+
+hero:
+  image: "{{ABOUT_HERO_IMAGE}}"
+
+designer:
+  photo: "{{DESIGNER_PHOTO}}"
+  name: "{{DESIGNER_NAME}}"
+  heading: "{{DESIGNER_HEADING}}"
+  title: "{{DESIGNER_TITLE}}"
+  bio_html: "{{DESIGNER_BIO}}"
+
+philosophy:
+  heading: "{{PHILOSOPHY_HEADING}}"
+  values:
+    - title: "{{VALUE_1_TITLE}}"
+      body: "{{VALUE_1_BODY}}"
+    - title: "{{VALUE_2_TITLE}}"
+      body: "{{VALUE_2_BODY}}"
+    - title: "{{VALUE_3_TITLE}}"
+      body: "{{VALUE_3_BODY}}"
+
+local:
+  label: "{{LOCAL_LABEL}}"
+  heading: "{{LOCAL_HEADING}}"
+  text: "{{LOCAL_TEXT}}"
+  image: "{{LOCAL_IMAGE}}"
+  image_alt: "{{LOCAL_IMAGE_ALT}}"
+
+testimonial_marquee:
+  - "{{ABOUT_TESTIMONIAL_1}}"
+  - "{{ABOUT_TESTIMONIAL_2}}"
+  - "{{ABOUT_TESTIMONIAL_3}}"
+
+cta:
+  heading: "{{ABOUT_CTA_HEADING}}"
+  text: "{{ABOUT_CTA_TEXT}}"
+
+flower_icon: "{{FLOWER_ICON}}"

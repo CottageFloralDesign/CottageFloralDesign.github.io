@@ -1,0 +1,41 @@
+business_name: "{{BUSINESS_NAME}}"
+tagline: "{{TAGLINE}}"
+url: "{{SITE_URL}}"
+announcement: "{{ANNOUNCEMENT}}"
+
+location:
+  city: "{{CITY}}"
+  region: "{{REGION}}"
+  service_areas:
+    - "{{SERVICE_AREA_1}}"
+    - "{{SERVICE_AREA_2}}"
+    - "{{SERVICE_AREA_3}}"
+
+contact:
+  email: "{{CONTACT_EMAIL}}"
+  phone: "{{CONTACT_PHONE}}"
+
+social:
+  instagram: "{{INSTAGRAM_URL}}"
+  pinterest: "{{PINTEREST_URL}}"
+
+nav:
+  - { label: "Home", url: "/" }
+  - { label: "Portfolio", url: "/portfolio/" }
+  - { label: "About", url: "/about/" }
+  - { label: "Inquire", url: "/inquiry/" }
+
+theme:
+  primary: "{{PRIMARY}}"
+  primary_light: "{{PRIMARY_LIGHT}}"
+  primary_pale: "{{PRIMARY_PALE}}"
+  accent: "{{ACCENT}}"
+  accent_light: "{{ACCENT_LIGHT}}"
+  bg: "{{BG}}"
+  bg_dark: "{{BG_DARK}}"
+  text: "{{TEXT}}"
+  text_light: "{{TEXT_LIGHT}}"
+  highlight: "{{HIGHLIGHT}}"
+  ff_display: "{{FF_DISPLAY}}"
+  ff_body: "{{FF_BODY}}"
+  google_fonts_url: "{{GOOGLE_FONTS_URL}}"

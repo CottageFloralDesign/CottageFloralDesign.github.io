@@ -1,0 +1,107 @@
+---
+layout: layouts/base.njk
+permalink: /index.html
+title: Home
+---
+<section class="hero">
+  <div class="hero__bg" role="img" aria-label="{{ home.hero.image_alt }}" style="background-image: url('{{ home.hero.image }}');"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <div class="hero__subtitle">{{ home.hero.subtitle }}</div>
+    <div class="hero__divider"></div>
+    <h1 class="hero__title">{{ home.hero.title }}</h1>
+    <p style="margin-bottom: 2.5rem; opacity: 0.85; max-width: 480px; margin-left: auto; margin-right: auto;">{{ home.hero.description }}</p>
+    <a href="/inquiry/" class="btn btn--light">{{ home.hero.cta }}</a>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee__track">
+    {% for item in home.testimonial_marquee %}
+      <span class="marquee__item">{{ item }}</span>
+      <span class="marquee__divider">✦</span>
+    {% endfor %}
+    {% for item in home.testimonial_marquee %}
+      <span class="marquee__item">{{ item }}</span>
+      <span class="marquee__divider">✦</span>
+    {% endfor %}
+  </div>
+</div>
+
+<section class="section section--white">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 4rem;" class="reveal">
+      <p class="feature__label" style="margin-bottom: 0.5rem;">{{ home.why.label }}</p>
+      <h2>{{ home.why.heading }}</h2>
+    </div>
+    <div class="grid-3">
+      {% for card in home.why.cards %}
+      <div class="card reveal">
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="feature reveal">
+  <div class="feature__image">
+    <img src="{{ home.approach.image }}" alt="{{ home.approach.image_alt }}" loading="lazy">
+  </div>
+  <div class="feature__text" style="background: var(--bg-dark);">
+    <span class="feature__label">{{ home.approach.label }}</span>
+    <h2>{{ home.approach.heading }}</h2>
+    <p>{{ home.approach.text }}</p>
+    <a href="/about/" class="btn btn--primary">{{ home.approach.cta }}</a>
+  </div>
+</div>
+
+<section class="section section--white">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 4rem;" class="reveal">
+      <p class="feature__label" style="margin-bottom: 0.5rem;">How It Works</p>
+      <h2>{{ home.process.heading }}</h2>
+    </div>
+    <div class="process">
+      {% for step in home.process.steps %}
+      <div class="process__step reveal">
+        <div class="process__number">{{ step.number }}</div>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="marquee marquee--primary">
+  <div class="marquee__track">
+    {% for item in home.services_marquee %}
+      <span class="marquee__item">{{ item }}</span>
+      <span class="marquee__divider">✦</span>
+    {% endfor %}
+    {% for item in home.services_marquee %}
+      <span class="marquee__item">{{ item }}</span>
+      <span class="marquee__divider">✦</span>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="feature feature--reverse reveal">
+  <div class="feature__image">
+    <img src="{{ home.portfolio_preview.image }}" alt="{{ home.portfolio_preview.image_alt }}" loading="lazy">
+  </div>
+  <div class="feature__text" style="background: var(--white);">
+    <span class="feature__label">Our Work</span>
+    <h2>{{ home.portfolio_preview.heading }}</h2>
+    <p>{{ home.portfolio_preview.text }}</p>
+    <a href="/portfolio/" class="btn btn--primary">View Portfolio</a>
+  </div>
+</div>
+
+<section class="cta section--bg reveal">
+  <h2>{{ home.cta.heading }}</h2>
+  <p>{{ home.cta.text }}</p>
+  <a href="/inquiry/" class="btn btn--filled" style="position: relative;">{{ home.cta.button }}</a>
+</section>

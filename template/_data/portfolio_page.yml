@@ -1,0 +1,22 @@
+seo:
+  title: "{{PORTFOLIO_SEO_TITLE}}"
+  description: "{{PORTFOLIO_META_DESCRIPTION}}"
+  og_image: "{{PORTFOLIO_OG_IMAGE}}"
+
+hero:
+  image: "{{PORTFOLIO_HERO_IMAGE}}"
+  image_alt: "{{PORTFOLIO_HERO_IMAGE_ALT}}"
+
+intro:
+  heading: "{{PORTFOLIO_INTRO_HEADING}}"
+  text: "{{PORTFOLIO_INTRO_TEXT}}"
+
+flowers_marquee:
+  - "{{FLOWER_1}}"
+  - "{{FLOWER_2}}"
+  - "{{FLOWER_3}}"
+  - "{{FLOWER_4}}"
+
+cta:
+  heading: "{{PORTFOLIO_CTA_HEADING}}"
+  text: "{{PORTFOLIO_CTA_TEXT}}"

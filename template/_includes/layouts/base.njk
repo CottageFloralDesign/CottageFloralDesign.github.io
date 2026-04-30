@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% include "partials/seo-head.njk" %}
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    :root {
+      --primary: {{ site.theme.primary }};
+      --primary-light: {{ site.theme.primary_light }};
+      --primary-pale: {{ site.theme.primary_pale }};
+      --accent: {{ site.theme.accent }};
+      --accent-light: {{ site.theme.accent_light }};
+      --bg: {{ site.theme.bg }};
+      --bg-dark: {{ site.theme.bg_dark }};
+      --text: {{ site.theme.text }};
+      --text-light: {{ site.theme.text_light }};
+      --highlight: {{ site.theme.highlight }};
+      --ff-display: {{ site.theme.ff_display }};
+      --ff-body: {{ site.theme.ff_body }};
+    }
+  </style>
+  {% if site.theme.google_fonts_url %}
+  <link href="{{ site.theme.google_fonts_url }}" rel="stylesheet">
+  {% endif %}
+  {% include "partials/schema-local-business.njk" %}
+  {% if schemaType == "Article" %}
+    {% include "partials/schema-article.njk" %}
+  {% endif %}
+</head>
+<body>
+  {% include "partials/nav.njk" %}
+  {{ content | safe }}
+  {% include "partials/footer.njk" %}
+  <script src="/js/main.js"></script>
+</body>
+</html>

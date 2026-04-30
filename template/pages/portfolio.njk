@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+permalink: /portfolio/index.html
+title: Portfolio
+---
+<section class="page-hero">
+  <div class="hero__bg" role="img" aria-label="{{ portfolio_page.hero.image_alt }}" style="background-image: url('{{ portfolio_page.hero.image }}');"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <div class="hero__subtitle">Our Work</div>
+    <div class="hero__divider"></div>
+    <h1 class="hero__title">Portfolio</h1>
+  </div>
+</section>
+
+<section class="section section--white" style="padding-bottom: 2rem;">
+  <div class="container" style="text-align: center; max-width: 700px;">
+    <div class="reveal">
+      <h2>{{ portfolio_page.intro.heading }}</h2>
+      <p style="color: var(--text-light); margin-top: 1.2rem;">{{ portfolio_page.intro.text }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white" style="padding-top: 2rem;">
+  <div class="container">
+    <div class="gallery">
+      {% set entries = collections.portfolio | reverse %}
+      {% for entry in entries %}
+      <figure class="gallery__item reveal">
+        <a href="{{ entry.url }}">
+          <img src="{{ entry.data.hero_image }}" alt="{{ entry.data.hero_image_alt }}" loading="lazy">
+        </a>
+        <figcaption class="gallery__caption">
+          <strong>{{ entry.data.title }}</strong>
+          {% if entry.data.location %}<br><span class="gallery__meta">{{ entry.data.location }}</span>{% endif %}
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="marquee marquee--primary">
+  <div class="marquee__track">
+    {% for item in portfolio_page.flowers_marquee %}
+      <span class="marquee__item">{{ item }}</span>
+      <span class="marquee__divider">✦</span>
+    {% endfor %}
+    {% for item in portfolio_page.flowers_marquee %}
+      <span class="marquee__item">{{ item }}</span>
+      <span class="marquee__divider">✦</span>
+    {% endfor %}
+  </div>
+</div>
+
+<section class="cta section--bg reveal">
+  <h2>{{ portfolio_page.cta.heading }}</h2>
+  <p>{{ portfolio_page.cta.text }}</p>
+  <a href="/inquiry/" class="btn btn--filled">Start Your Inquiry</a>
+</section>
+
+<div class="lightbox">
+  <div class="lightbox__close">&times;</div>
+  <img class="lightbox__img" src="" alt="Gallery image">
+</div>

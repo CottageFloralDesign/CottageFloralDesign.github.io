@@ -113,7 +113,7 @@ git commit -m "chore(template): scaffold Eleventy project"
 
 **Files:**
 - Create: `template/_data/site.yml`
-- Create: `template/_data/seo.yml`
+- Create: `template/_data/seo_defaults.yml`
 - Create: `template/tests/data.test.mjs`
 
 - [ ] **Step 1: Write the failing test**
@@ -124,7 +124,7 @@ Create `template/tests/data.test.mjs`:
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import yaml from "../node_modules/js-yaml/dist/js-yaml.js";
+import yaml from "js-yaml";
 
 test("site.yml has required top-level keys", () => {
   const raw = readFileSync(new URL("../_data/site.yml", import.meta.url), "utf-8");

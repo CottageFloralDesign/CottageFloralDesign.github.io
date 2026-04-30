@@ -1,0 +1,21 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% set staticUrls = ["/", "/portfolio/", "/about/", "/inquiry/"] %}
+  {% for url in staticUrls %}
+  <url>
+    <loc>{{ site.url }}{{ url }}</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  {% endfor %}
+  {% for entry in collections.portfolio %}
+  <url>
+    <loc>{{ site.url }}{{ entry.url }}</loc>
+    {% if entry.data.date %}<lastmod>{{ entry.data.date | toISOString }}</lastmod>{% endif %}
+    <changefreq>yearly</changefreq>
+  </url>
+  {% endfor %}
+</urlset>

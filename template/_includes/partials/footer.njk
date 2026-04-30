@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__brand">
+      <span class="footer__logo">{{ site.business_name }}</span>
+      <p class="footer__tagline">{{ site.tagline }}</p>
+    </div>
+    <div class="footer__location">
+      <p>{{ site.location.city }}, {{ site.location.region }}</p>
+      <p class="footer__service-areas">Serving: {% for area in site.location.service_areas %}{{ area }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+    </div>
+    <div class="footer__contact">
+      <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+      {% if site.contact.phone %}<a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a>{% endif %}
+    </div>
+    <div class="footer__social">
+      {% if site.social.instagram %}<a href="{{ site.social.instagram }}" rel="noopener noreferrer" target="_blank">Instagram</a>{% endif %}
+      {% if site.social.pinterest %}<a href="{{ site.social.pinterest }}" rel="noopener noreferrer" target="_blank">Pinterest</a>{% endif %}
+    </div>
+    <p class="footer__copy">© {{ currentYear }} {{ site.business_name }}. All rights reserved.</p>
+  </div>
+</footer>

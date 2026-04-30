@@ -1,0 +1,16 @@
+<header class="header">
+  {% if site.announcement %}<div class="announcement">{{ site.announcement }}</div>{% endif %}
+  <nav class="nav">
+    <a href="/" class="nav__logo">{{ site.business_name }}</a>
+    <ul class="nav__links">
+      {% for item in site.nav %}
+      <li>
+        <a href="{{ item.url }}" class="nav__link{% if page.url == item.url %} active{% endif %}">{{ item.label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="nav__toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
