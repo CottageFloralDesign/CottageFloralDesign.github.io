@@ -21,3 +21,9 @@ test("HANDOFF.md exists and covers key topics", () => {
   assert.match(md, /Editing pages/i);
   assert.match(md, /Publishing/i);
 });
+
+test("netlify.toml has legacy portfolio URL redirects", () => {
+  const txt = readFileSync(join(REPO_ROOT, "netlify.toml"), "utf-8");
+  assert.match(txt, /from\s*=\s*"\/portfolio\/austin-anna\.html"/);
+  assert.match(txt, /status\s*=\s*301/);
+});

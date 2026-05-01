@@ -9,3 +9,44 @@
   from = "/admin"
   to = "/admin/index.html"
   status = 200
+
+# Legacy URL redirects (preserve SEO equity from old GitHub Pages URLs)
+[[redirects]]
+  from = "/portfolio/austin-anna.html"
+  to = "/portfolio/austin-anna/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio/dani-rock.html"
+  to = "/portfolio/dani-rock/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio/katelyn-brad.html"
+  to = "/portfolio/katelyn-brad/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio/maile-aidan.html"
+  to = "/portfolio/maile-aidan/"
+  status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio.html"
+  to = "/portfolio/"
+  status = 301
+
+[[redirects]]
+  from = "/inquiry.html"
+  to = "/inquiry/"
+  status = 301
