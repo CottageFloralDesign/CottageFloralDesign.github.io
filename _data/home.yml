@@ -1,100 +1,111 @@
 seo:
-  title: "Cottage Floral Design — Bespoke Wedding & Event Florals | Salt Lake City"
-  description: "Cottage Floral Design creates romantic, garden-inspired floral arrangements for weddings and special events."
-  og_image: "/assets/Headliner.jpg"
-
+  title: Cottage Floral Design — Bespoke Wedding & Event Florals | Salt Lake City
+  description: Cottage Floral Design creates romantic, garden-inspired floral
+    arrangements for weddings and special events.
+  og_image: /assets/Headliner.jpg
 hero:
-  subtitle: "Tell Your Story Through Flowers"
-  title: "Cottage Floral Design"
-  description: "Crafting cohesive, intentional event and wedding florals that invite people to slow down, notice beauty, and feel something real."
-  cta: "Start Your Consultation"
-  image: "/assets/Headliner.jpg"
-  image_alt: "Bridal floral arrangement by Cottage Floral Design, Salt Lake City wedding florist"
-
+  subtitle: Tell Your Story Through Flowers
+  title: Cottage Floral Design
+  description: Crafting cohesive, intentional event and wedding florals that
+    invite people to slow down, notice beauty, and feel something real.
+  cta: Start Your Consultation
+  image: /assets/Headliner.jpg
+  image_alt: Bridal floral arrangement by Cottage Floral Design, Salt Lake City
+    wedding florist
 testimonial_marquee:
   - '"Such a good eye for color and style" —Aria'
-  - '"She understood exactly what we were wanting and executed it perfectly" —Kristine'
+  - '"She understood exactly what we were wanting and executed it perfectly"
+    —Kristine'
   - '"Matches your story perfectly" —Baylee'
-  - '"She has an eye for how each arrangement will work in a very specific place." —Raven'
-  - '"She is friendly, easy to work with, reasonably priced, and so passionate about her work." —Tailor'
+  - '"She has an eye for how each arrangement will work in a very specific
+    place." —Raven'
+  - '"She is friendly, easy to work with, reasonably priced, and so passionate
+    about her work." —Tailor'
   - '"I was blown away by her expertise, kindness, and genuine concern." —Haley'
-
+  - NEW REVIEW -- SAM
 why:
-  label: "Why Cottage Floral"
-  heading: "Flowers with a Purpose"
+  label: Why Cottage Floral
+  heading: Flowers with a Purpose
   cards:
-    - title: "Story-Led Florals"
-      body: "Every design begins with your story, using flowers, color, and form to reflect what matters most to you."
-      image: "/assets/Story-Led.jpg"
-      image_alt: "Story-led florals"
+    - title: Story-Led Florals
+      body: Every design begins with your story, using flowers, color, and form to
+        reflect what matters most to you.
+      image: /assets/Story-Led.jpg
+      image_alt: Story-led florals
       credit: "@poiseandivy_imagery"
-    - title: "Where It Matters Most"
-      body: "Your budget is guided toward the moments that will have the greatest impact on your day."
-      image: "/assets/whereitmattersmost.jpg"
-      image_alt: "Where it matters most"
+    - title: Where It Matters Most
+      body: Your budget is guided toward the moments that will have the greatest
+        impact on your day.
+      image: /assets/whereitmattersmost.jpg
+      image_alt: Where it matters most
       credit: "@stoked.moments"
-    - title: "Botany-Informed Design"
-      body: "Grounded in plant science and floral training, each piece is designed to move, last, and feel intentional."
-      image: "/assets/Botany.jpg"
-      image_alt: "Botany-informed design"
+    - title: Botany-Informed Design
+      body: Grounded in plant science and floral training, each piece is designed to
+        move, last, and feel intentional.
+      image: /assets/Botany.jpg
+      image_alt: Botany-informed design
       credit: "@jennypearlphotography"
-    - title: "Floral Design as Art"
-      body: "Sculptural, expressive, and designed with movement. Florals that feel like art, not just decoration."
-      image: "/assets/FloralArt.jpg"
-      image_alt: "Floral design as art"
+    - title: Floral Design as Art
+      body: Sculptural, expressive, and designed with movement. Florals that feel like
+        art, not just decoration.
+      image: /assets/FloralArt.jpg
+      image_alt: Floral design as art
       credit: "@alimontemayorphotography"
-    - title: "Environmentally-Conscious"
-      body: "With sustainability in mind, we prioritize foam-free mechanics and avoid single use plastics whenever possible, along with local blooms and thoughtful sourcing."
-      image: "/assets/Environmentally.jpg"
-      image_alt: "Environmentally conscious florals"
+    - title: Environmentally-Conscious
+      body: With sustainability in mind, we prioritize foam-free mechanics and avoid
+        single use plastics whenever possible, along with local blooms and
+        thoughtful sourcing.
+      image: /assets/Environmentally.jpg
+      image_alt: Environmentally conscious florals
       credit: "@taylor.elaine.photo"
-    - title: "Rooted in Meaning"
-      body: "This work is personal to me. Guided by my faith and a desire to create something meaningful for every story I'm trusted with. All love stories are welcome."
-      image: "/assets/RootedinMeaning.jpg"
-      image_alt: "Rooted in meaning"
+    - title: Rooted in Meaning
+      body: This work is personal to me. Guided by my faith and a desire to create
+        something meaningful for every story I'm trusted with. All love stories
+        are welcome.
+      image: /assets/RootedinMeaning.jpg
+      image_alt: Rooted in meaning
       credit: "@shalesedeserayphotography"
-
 approach:
-  label: "Our Approach"
-  heading: "Designed with Intention"
-  text: "This process starts with listening. We take time to understand what matters most to you, your story, your style, and the feeling you want to evoke, so your flowers reflect something meaningful, not just beautiful."
-  cta: "Learn Our Story"
-  image: "/assets/FloristAtWork.jpg"
-  image_alt: "Florist at work arranging wedding flowers, Cottage Floral Design"
-
+  label: Our Approach
+  heading: Designed with Intention
+  text: This process starts with listening. We take time to understand what
+    matters most to you, your story, your style, and the feeling you want to
+    evoke, so your flowers reflect something meaningful, not just beautiful.
+  cta: Learn Our Story
+  image: /assets/FloristAtWork.jpg
+  image_alt: Florist at work arranging wedding flowers, Cottage Floral Design
 process:
-  heading: "Four Simple Steps"
+  heading: Four Simple Steps
   steps:
     - number: "01"
-      title: "Inquire"
-      body: "Share your date, venue, and floral dreams through our inquiry form."
+      title: Inquire
+      body: Share your date, venue, and floral dreams through our inquiry form.
     - number: "02"
-      title: "Consult"
-      body: "We'll meet to discuss your vision, color palette, and design direction."
+      title: Consult
+      body: We'll meet to discuss your vision, color palette, and design direction.
     - number: "03"
-      title: "Design"
-      body: "We craft a custom floral proposal tailored to your celebration."
+      title: Design
+      body: We craft a custom floral proposal tailored to your celebration.
     - number: "04"
-      title: "Celebrate"
-      body: "On your day, we deliver and install every bloom to perfection."
-
+      title: Celebrate
+      body: On your day, we deliver and install every bloom to perfection.
 services_marquee:
-  - "Weddings"
-  - "Elopements"
-  - "Bridal Showers"
-  - "Corporate Events"
-  - "Intimate Dinners"
-  - "Photo Shoots"
-
+  - Weddings
+  - Elopements
+  - Bridal Showers
+  - Corporate Events
+  - Intimate Dinners
+  - Photo Shoots
 portfolio_preview:
-  heading: "A Glimpse of Stories Told"
-  text: "From meaningful ceremony moments to thoughtfully designed details, these are the celebrations we've had the honor of shaping through flowers."
-  image: "/assets/pastblooms.jpg"
-  image_alt: "Past wedding floral work by Cottage Floral Design"
-
+  heading: A Glimpse of Stories Told
+  text: From meaningful ceremony moments to thoughtfully designed details, these
+    are the celebrations we've had the honor of shaping through flowers.
+  image: /assets/pastblooms.jpg
+  image_alt: Past wedding floral work by Cottage Floral Design
 cta:
-  heading: "Ready to Bring Your Floral Vision to Life?"
-  text: "We'd love to hear about your celebration. Let's create something beautiful together."
-  button: "Begin Your Inquiry"
-  image: "/assets/calltoactionhome.jpg"
-  image_alt: "Call to action background"
+  heading: Ready to Bring Your Floral Vision to Life?
+  text: We'd love to hear about your celebration. Let's create something beautiful
+    together.
+  button: Begin Your Inquiry
+  image: /assets/calltoactionhome.jpg
+  image_alt: Call to action background
