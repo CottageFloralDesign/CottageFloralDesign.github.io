@@ -6,14 +6,15 @@ test("portfolio listing builds to /portfolio/index.html", () => {
   assert.ok(outputExists("portfolio/index.html"));
 });
 
-test("portfolio listing links to all portfolio entries", () => {
+test("portfolio listing links to all four weddings", () => {
   const html = readOutput("portfolio/index.html");
-  assert.match(html, /href="\/portfolio\/sample-wedding-1\//);
-  assert.match(html, /href="\/portfolio\/sample-wedding-2\//);
+  for (const slug of ["austin-anna", "dani-rock", "katelyn-brad", "maile-aidan"]) {
+    assert.match(html, new RegExp(`href="/portfolio/${slug}/"`));
+  }
 });
 
 test("portfolio listing entries show hero image and title", () => {
   const html = readOutput("portfolio/index.html");
-  assert.match(html, /Sample Wedding 1/);
-  assert.match(html, /<img[^>]*src="\/assets\/portfolio\/sample-wedding-1\/hero\.jpg"/);
+  assert.match(html, /Anna.*Austin|Austin.*Anna/);
+  assert.match(html, /<img[^>]*src="\/assets\/portfolio\/austin-anna\/[^"]+"/);
 });

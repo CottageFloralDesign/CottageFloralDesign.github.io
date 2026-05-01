@@ -10,7 +10,7 @@ test("sitemap includes home and portfolio pages", () => {
   const xml = readOutput("sitemap.xml");
   assert.match(xml, /<loc>[^<]*\/<\/loc>/);
   assert.match(xml, /<loc>[^<]*\/portfolio\/<\/loc>/);
-  assert.match(xml, /<loc>[^<]*\/portfolio\/sample-wedding-1\/<\/loc>/);
+  assert.match(xml, /<loc>[^<]*\/portfolio\/austin-anna\/<\/loc>/);
 });
 
 test("robots.txt is generated", () => {

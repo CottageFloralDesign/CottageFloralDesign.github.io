@@ -2,22 +2,22 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readOutput, outputExists } from "./render.mjs";
 
-test("sample wedding 1 builds to its own directory", () => {
-  assert.ok(outputExists("portfolio/sample-wedding-1/index.html"));
+test("austin-anna wedding builds to its own directory", () => {
+  assert.ok(outputExists("portfolio/austin-anna/index.html"));
 });
 
-test("sample wedding 2 builds to its own directory", () => {
-  assert.ok(outputExists("portfolio/sample-wedding-2/index.html"));
+test("dani-rock wedding builds to its own directory", () => {
+  assert.ok(outputExists("portfolio/dani-rock/index.html"));
 });
 
 test("portfolio entry renders title, location, venue, and gallery", () => {
-  const html = readOutput("portfolio/sample-wedding-1/index.html");
-  assert.match(html, /Sample Wedding 1/);
+  const html = readOutput("portfolio/austin-anna/index.html");
+  assert.match(html, /Anna.*Austin|Austin.*Anna/);
   assert.match(html, /class="gallery"/);
   assert.match(html, /<img[^>]*alt="[^"]+"/);
 });
 
 test("portfolio entry renders SEO from frontmatter", () => {
-  const html = readOutput("portfolio/sample-wedding-1/index.html");
-  assert.match(html, /<title>Sample Wedding 1[^<]*<\/title>/);
+  const html = readOutput("portfolio/austin-anna/index.html");
+  assert.match(html, /<title>[^<]*Anna[^<]*<\/title>/);
 });

@@ -1,0 +1,66 @@
+---
+title: "Katelyn & Brad"
+date: 2024-09-14
+location: "Utah"
+venue: "The Northampton House"
+season: "Fall"
+palette:
+  - "blush"
+  - "burgundy"
+  - "ivory"
+  - "greenery"
+hero_image: "/assets/portfolio/katelyn-brad/header.jpg"
+hero_image_alt: "Katelyn and Brad's wedding florals at The Northampton House, Utah"
+gallery:
+  - image: "/assets/portfolio/katelyn-brad/493A5725.jpg"
+    caption: "Bridal bouquet — blush, burgundy, and ivory blooms"
+    alt: "Katelyn's bridal bouquet with blush, burgundy, and ivory florals by Cottage Floral Design"
+  - image: "/assets/portfolio/katelyn-brad/493A5888.jpg"
+    caption: "Ceremony arch with full floral arrangement"
+    alt: "Wedding ceremony arch with blush and burgundy floral arrangement at The Northampton House"
+  - image: "/assets/portfolio/katelyn-brad/493A6075.jpg"
+    caption: "Ceremony detail — floral backdrop and candlelight"
+    alt: "Ceremony floral backdrop with candlelight detail at The Northampton House"
+  - image: "/assets/portfolio/katelyn-brad/493A6456.jpg"
+    caption: "Couple at the altar with full floral surround"
+    alt: "Katelyn and Brad at the altar surrounded by Cottage Floral Design ceremony florals"
+  - image: "/assets/portfolio/katelyn-brad/493A6569.jpg"
+    caption: "Reception centerpiece — long table arrangement"
+    alt: "Long table centerpiece with blush and burgundy florals at The Northampton House reception"
+  - image: "/assets/portfolio/katelyn-brad/493A6601.jpg"
+    caption: "Floral installation detail — lush and layered"
+    alt: "Lush layered floral installation detail for Katelyn and Brad's wedding at The Northampton House"
+  - image: "/assets/portfolio/katelyn-brad/493A6605.jpg"
+    caption: "Bouquet close-up — petal texture and depth"
+    alt: "Close-up of bridal bouquet petal texture with blush roses and greenery"
+  - image: "/assets/portfolio/katelyn-brad/493A6606.jpg"
+    caption: "Detail shot — floral accent on cake table"
+    alt: "Floral accent piece on cake table at Katelyn and Brad's wedding reception"
+  - image: "/assets/portfolio/katelyn-brad/493A6607.jpg"
+    caption: "Ring and bouquet flat lay"
+    alt: "Katelyn's engagement ring from Sierra West Jewelers alongside her bridal bouquet"
+  - image: "/assets/portfolio/katelyn-brad/493A6611.jpg"
+    caption: "Bridesmaids' bouquets — coordinated palette"
+    alt: "Bridesmaids' bouquets in coordinated blush and ivory palette by Cottage Floral Design"
+  - image: "/assets/portfolio/katelyn-brad/493A6712.jpg"
+    caption: "Couple portrait — floral arrangements in background"
+    alt: "Katelyn and Brad couple portrait with Cottage Floral Design arrangements at The Northampton House"
+  - image: "/assets/portfolio/katelyn-brad/493A6754.jpg"
+    caption: "Reception table setting with floral centerpieces"
+    alt: "Reception table setting with blush floral centerpieces at The Northampton House"
+  - image: "/assets/portfolio/katelyn-brad/493A6783.jpg"
+    caption: "Candid moment — reception dancing with floral backdrop"
+    alt: "Candid reception dancing moment in front of Cottage Floral Design floral backdrop"
+  - image: "/assets/portfolio/katelyn-brad/493A6797.jpg"
+    caption: "Couple's last dance in the floral-adorned reception"
+    alt: "Katelyn and Brad's last dance in reception adorned with Cottage Floral Design florals"
+seo:
+  title: "Katelyn & Brad Wedding at The Northampton House | Cottage Floral Design"
+  description: "Wedding florals for Katelyn and Brad at The Northampton House, Utah — blush, burgundy, and ivory designs by Cottage Floral Design."
+---
+
+Katelyn and Brad's wedding at The Northampton House was a fall celebration rich with color and depth. Their palette of blush, burgundy, and ivory brought warmth to every arrangement — from the full ceremony arch to the long reception table centerpieces that drew the room together.
+
+Cottage Floral Design served as florist and content creator for their day, crafting each piece to feel romantic and season-forward. The ceremony arch was the centerpiece of the evening, overflowing with blooms that set the tone for the entire celebration.
+
+Photography by @bayandbrephoto captured every floral detail beautifully. We loved working alongside an incredible vendor team including @pritchettbridal, @ambrosialcakes, and @sierrawestjewelers to make Katelyn and Brad's vision come to life.

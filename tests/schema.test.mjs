@@ -13,6 +13,6 @@ test("LocalBusiness schema contains business_name", () => {
 });
 
 test("portfolio entry includes Article schema", () => {
-  const html = readOutput("portfolio/sample-wedding-1/index.html");
+  const html = readOutput("portfolio/austin-anna/index.html");
   assert.match(html, /<script type="application\/ld\+json">[\s\S]*"@type":\s*"Article"/);
 });
