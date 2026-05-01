@@ -13,6 +13,15 @@ module.exports = function(eleventyConfig) {
     return new Date(date).toISOString();
   });
 
+  // Exclude docs and other non-site directories
+  eleventyConfig.ignores.add("docs/**");
+  eleventyConfig.ignores.add("portfolio/*.html");
+  // TODO Task 9: remove the next two ignores; instead set
+  // templateEngineOverride: "" in seasonal page frontmatter so Eleventy
+  // copies them verbatim without Nunjucks processing.
+  eleventyConfig.ignores.add("mothers-day.html");
+  eleventyConfig.ignores.add("dance-flowers.html");
+
   // Pass-through static assets
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");

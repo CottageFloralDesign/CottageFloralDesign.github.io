@@ -1,15 +1,8 @@
 /* ============================================
-   Cottage Floral Design — Main JS
+   Florist Website Template — Main JS
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-
-  // --- Dynamic booking years ---
-  const bookingYears = document.getElementById('booking-years');
-  if (bookingYears) {
-    const year = new Date().getFullYear();
-    bookingYears.textContent = year + ' & ' + (year + 1);
-  }
 
   // --- Header scroll effect ---
   const header = document.querySelector('.header');
@@ -27,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.classList.toggle('open');
       toggle.classList.toggle('active');
     });
-    // Close on link click
     navLinks.querySelectorAll('.nav__link').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');

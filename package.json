@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "eleventy",
-    "dev": "eleventy --serve",
+    "dev": "CHOKIDAR_USEPOLLING=true eleventy --serve",
     "clean": "rm -rf _site",
     "pretest": "rm -rf _site && eleventy",
     "test": "node --test tests/"
