@@ -1,42 +1,51 @@
 seo:
-  title: "{{ABOUT_SEO_TITLE}}"
-  description: "{{ABOUT_META_DESCRIPTION}}"
-  og_image: "{{ABOUT_OG_IMAGE}}"
+  title: "About — Cottage Floral Design | Salt Lake City Wedding Florist"
+  description: "Meet the designer behind Cottage Floral Design. Learn about our garden-inspired philosophy and passion for seasonal florals."
+  og_image: "/assets/about.jpg"
 
 hero:
-  image: "{{ABOUT_HERO_IMAGE}}"
+  image: "/assets/about.jpg"
 
 designer:
-  photo: "{{DESIGNER_PHOTO}}"
-  name: "{{DESIGNER_NAME}}"
-  heading: "{{DESIGNER_HEADING}}"
-  title: "{{DESIGNER_TITLE}}"
-  bio_html: "{{DESIGNER_BIO}}"
+  photo: "/assets/florist.jpg"
+  name: "Cottage Floral Designer"
+  heading: "The Story-Teller Behind the Blooms"
+  title: "Owner & Lead Floral Designer"
+  bio_html: "<p>What began as a love for knowing the names of wildflowers has grown into something more intentional. I founded Cottage Floral Design with the belief that fresh florals should do more than decorate a space. They should draw people in, mark a moment, and tell a story.</p><p>Flowers are a luxury product and deeply perishable. To me, that is exactly what makes them meaningful. Their fleeting nature invites us to be present. When you bring flowers into a moment you want to celebrate, they ask you to slow down, to notice, and to feel it more fully.</p><p>I also believe flowers exist for a reason beyond function. There are countless ways plants reproduce, and yet we are given something this intricate and beautiful. To me, that reflects a Creator who values beauty, and reminds me that beauty itself is a worthy pursuit.</p><p>With a background in plant science and formal floral training, I approach each piece with both creativity and care, designing florals that not only look beautiful but move well and last throughout your day.</p><p>I have always been drawn to people and their stories, and that curiosity shapes everything I create. Inspired by the Dutch masters and the layered symbolism of florals throughout history, I design with intention, creating pieces that feel personal, expressive, and alive.</p>"
 
 philosophy:
-  heading: "{{PHILOSOPHY_HEADING}}"
+  heading: "What We Believe"
   values:
-    - title: "{{VALUE_1_TITLE}}"
-      body: "{{VALUE_1_BODY}}"
-    - title: "{{VALUE_2_TITLE}}"
-      body: "{{VALUE_2_BODY}}"
-    - title: "{{VALUE_3_TITLE}}"
-      body: "{{VALUE_3_BODY}}"
+    - title: "Story First"
+      body: "Every design begins with meaning. Flowers become a way to hold memory, emotion, and story in a physical, fleeting form."
+    - title: "Presence Over Perfection"
+      body: "Because flowers are fleeting, they ask us to be present. Their impermanence is not a flaw, but the very reason they matter."
+    - title: "Floral Design as Art"
+      body: "We approach florals as a study of form, movement, and space, creating pieces that feel expressive, sculptural, and alive."
+    - title: "Grounded in Botany"
+      body: "A foundation in plant science and formal training informs each design, honoring how flowers naturally grow, move, and exist."
+    - title: "Thoughtful Stewardship"
+      body: "Whenever possible, we work with seasonal materials and sustainable mechanics, designing with both beauty and responsibility in mind."
+    - title: "Rooted in Meaning"
+      body: "This work is shaped by faith and a belief that beauty has purpose, and that creating it is a meaningful pursuit."
 
 local:
-  label: "{{LOCAL_LABEL}}"
-  heading: "{{LOCAL_HEADING}}"
-  text: "{{LOCAL_TEXT}}"
-  image: "{{LOCAL_IMAGE}}"
-  image_alt: "{{LOCAL_IMAGE_ALT}}"
+  label: "Local & Seasonal"
+  heading: "Flowers Grown Close to Home"
+  text: "Whenever the season allows, we source blooms from local Utah growers and farms. Working with fresh, regional flowers means better quality, longer vase life, and a smaller footprint — and it keeps us connected to the rhythms of the land we live on."
+  image: "/assets/FloristAtWork.jpg"
+  image_alt: "Florist arranging locally sourced seasonal flowers, Cottage Floral Design Salt Lake City"
 
 testimonial_marquee:
-  - "{{ABOUT_TESTIMONIAL_1}}"
-  - "{{ABOUT_TESTIMONIAL_2}}"
-  - "{{ABOUT_TESTIMONIAL_3}}"
+  - '"Such a good eye for color and style" —Aria'
+  - '"She understood exactly what we were wanting and executed it perfectly" —Kristine'
+  - '"Matches your story perfectly" —Baylee'
+  - '"She has an eye for how each arrangement will work in a very specific place." —Raven'
+  - '"She is friendly, easy to work with, reasonably priced, and so passionate about her work." —Tailor'
+  - '"I was blown away by her expertise, kindness, and genuine concern." —Haley'
 
 cta:
-  heading: "{{ABOUT_CTA_HEADING}}"
-  text: "{{ABOUT_CTA_TEXT}}"
+  heading: "Let's Create Something Beautiful Together"
+  text: "I'd love to hear about your celebration and bring your floral dreams to life."
 
-flower_icon: "{{FLOWER_ICON}}"
+flower_icon: "✿"
