@@ -47,5 +47,7 @@ testimonial_marquee:
 cta:
   heading: "Let's Create Something Beautiful Together"
   text: "I'd love to hear about your celebration and bring your floral dreams to life."
+  image: "/assets/calltoactionabout.jpg"
+  image_alt: "Call to action background"
 
 flower_icon: "✿"

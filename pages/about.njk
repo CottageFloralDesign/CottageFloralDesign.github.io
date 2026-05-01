@@ -73,6 +73,9 @@ title: About
 </div>
 
 <section class="cta section--white reveal">
+  {% if about.cta.image %}
+  <div class="cta__bg" role="img" aria-label="{{ about.cta.image_alt }}" style="background-image: url('{{ about.cta.image }}');"></div>
+  {% endif %}
   <h2>{{ about.cta.heading }}</h2>
   <p>{{ about.cta.text }}</p>
   <a href="/inquiry/" class="btn btn--filled">Get in Touch</a>

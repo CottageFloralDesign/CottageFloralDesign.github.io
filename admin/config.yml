@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
+local_backend: true
+
 publish_mode: editorial_workflow
 
 media_folder: "assets/portfolio"
@@ -50,6 +52,9 @@ collections:
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Body", name: "body", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Image alt text", name: "image_alt", widget: "string", required: false }
+                  - { label: "Photo credit (e.g., @photographer)", name: "credit", widget: "string", required: false }
           - label: "Approach section"
             name: "approach"
             widget: "object"
@@ -88,6 +93,8 @@ collections:
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Body", name: "text", widget: "text" }
               - { label: "Button label", name: "button", widget: "string" }
+              - { label: "Background image", name: "image", widget: "image", required: false }
+              - { label: "Background image alt text", name: "image_alt", widget: "string", required: false }
 
       - file: "_data/about.yml"
         name: "about"
@@ -142,6 +149,8 @@ collections:
             fields:
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Body", name: "text", widget: "text" }
+              - { label: "Background image", name: "image", widget: "image", required: false }
+              - { label: "Background image alt text", name: "image_alt", widget: "string", required: false }
           - { label: "Flower icon (HTML/SVG)", name: "flower_icon", widget: "string" }
 
       - file: "_data/portfolio_page.yml"
