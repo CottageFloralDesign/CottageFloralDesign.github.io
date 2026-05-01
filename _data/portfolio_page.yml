@@ -1,22 +1,26 @@
 seo:
-  title: "{{PORTFOLIO_SEO_TITLE}}"
-  description: "{{PORTFOLIO_META_DESCRIPTION}}"
-  og_image: "{{PORTFOLIO_OG_IMAGE}}"
+  title: "Portfolio — Cottage Floral Design"
+  description: "Browse our portfolio of romantic, garden-inspired wedding and event florals by Cottage Floral Design."
+  og_image: "/assets/portfolio.jpg"
 
 hero:
-  image: "{{PORTFOLIO_HERO_IMAGE}}"
-  image_alt: "{{PORTFOLIO_HERO_IMAGE_ALT}}"
+  image: "/assets/portfolio.jpg"
+  image_alt: "Romantic garden-style wedding florals by Cottage Floral Design"
 
 intro:
-  heading: "{{PORTFOLIO_INTRO_HEADING}}"
-  text: "{{PORTFOLIO_INTRO_TEXT}}"
+  heading: "A Glimpse of Stories Told"
+  text: "From meaningful ceremony moments to thoughtfully designed details, these are the celebrations we've had the honor of shaping through flowers."
 
 flowers_marquee:
-  - "{{FLOWER_1}}"
-  - "{{FLOWER_2}}"
-  - "{{FLOWER_3}}"
-  - "{{FLOWER_4}}"
+  - "Garden Roses"
+  - "Ranunculus"
+  - "Peonies"
+  - "Sweet Pea"
+  - "Dahlias"
+  - "Hellebores"
+  - "Anemones"
+  - "Lisianthus"
 
 cta:
-  heading: "{{PORTFOLIO_CTA_HEADING}}"
-  text: "{{PORTFOLIO_CTA_TEXT}}"
+  heading: "Love What You See?"
+  text: "Let's design something equally beautiful for your celebration."
