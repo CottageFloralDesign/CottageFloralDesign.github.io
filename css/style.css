@@ -1,5 +1,5 @@
 /* ============================================
-   Florist Website Template
+   Cottage Floral Design — Eleventy + Decap
    ============================================ */
 
 /* Theme tokens (--primary, --accent, fonts, etc.) are injected per-site
@@ -7,6 +7,21 @@
    Google Fonts are loaded via <link> in base.njk when site.theme.google_fonts_url is set. */
 :root {
   --white: #FFFFFF;
+
+  /* THEME DEFAULTS for static pages (mothers-day.html, dance-flowers.html).
+     Converted pages override these via inline <style> in base.njk. */
+  --primary: #4A5D4E;
+  --primary-light: #6B7F6E;
+  --primary-pale: #D4DDD6;
+  --accent: #C9A5A0;
+  --accent-light: #E8D5D2;
+  --bg: #FAF7F2;
+  --bg-dark: #F2EDE5;
+  --text: #3A3A3A;
+  --text-light: #6B6B6B;
+  --highlight: #C4A96A;
+  --ff-display: 'Cormorant Garamond', 'Georgia', serif;
+  --ff-body: 'Questrial', 'Helvetica Neue', sans-serif;
 
   /* TYPOGRAPHY SIZES (kept here, not theme-overridable) */
   --fs-hero: clamp(3rem, 8vw, 6.5rem);
