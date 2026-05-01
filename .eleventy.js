@@ -16,11 +16,8 @@ module.exports = function(eleventyConfig) {
   // Exclude docs and other non-site directories
   eleventyConfig.ignores.add("docs/**");
   eleventyConfig.ignores.add("portfolio/*.html");
-  // TODO Task 9: remove the next two ignores; instead set
-  // templateEngineOverride: "" in seasonal page frontmatter so Eleventy
-  // copies them verbatim without Nunjucks processing.
-  eleventyConfig.ignores.add("mothers-day.html");
-  eleventyConfig.ignores.add("dance-flowers.html");
+  // mothers-day.html and dance-flowers.html use templateEngineOverride: ""
+  // in their frontmatter (Task 9) — they pass through Eleventy verbatim.
 
   // Pass-through static assets
   eleventyConfig.addPassthroughCopy("css");
