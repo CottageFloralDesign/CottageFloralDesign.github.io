@@ -1,67 +1,80 @@
 seo:
-  title: "{{HOME_SEO_TITLE}}"
-  description: "{{HOME_META_DESCRIPTION}}"
-  og_image: "{{HOME_OG_IMAGE}}"
+  title: "Cottage Floral Design — Bespoke Wedding & Event Florals | Salt Lake City"
+  description: "Cottage Floral Design creates romantic, garden-inspired floral arrangements for weddings and special events."
+  og_image: "/assets/Headliner.jpg"
 
 hero:
-  subtitle: "{{TAGLINE}}"
-  title: "{{HERO_TITLE}}"
-  description: "{{HERO_DESCRIPTION}}"
-  cta: "{{HERO_CTA}}"
-  image: "{{HERO_IMAGE}}"
-  image_alt: "{{HERO_IMAGE_ALT}}"
+  subtitle: "Tell Your Story Through Flowers"
+  title: "Cottage Floral Design"
+  description: "Crafting cohesive, intentional event and wedding florals that invite people to slow down, notice beauty, and feel something real."
+  cta: "Start Your Consultation"
+  image: "/assets/Headliner.jpg"
+  image_alt: "Bridal floral arrangement by Cottage Floral Design, Salt Lake City wedding florist"
 
 testimonial_marquee:
-  - "{{TESTIMONIAL_1}}"
-  - "{{TESTIMONIAL_2}}"
-  - "{{TESTIMONIAL_3}}"
-  - "{{TESTIMONIAL_4}}"
+  - '"Such a good eye for color and style" —Aria'
+  - '"She understood exactly what we were wanting and executed it perfectly" —Kristine'
+  - '"Matches your story perfectly" —Baylee'
+  - '"She has an eye for how each arrangement will work in a very specific place." —Raven'
+  - '"She is friendly, easy to work with, reasonably priced, and so passionate about her work." —Tailor'
+  - '"I was blown away by her expertise, kindness, and genuine concern." —Haley'
 
 why:
-  label: "{{WHY_LABEL}}"
-  heading: "{{WHY_HEADING}}"
+  label: "Why Cottage Floral"
+  heading: "Flowers with a Purpose"
   cards:
-    - title: "{{WHY_CARD_1_TITLE}}"
-      body: "{{WHY_CARD_1_BODY}}"
-    - title: "{{WHY_CARD_2_TITLE}}"
-      body: "{{WHY_CARD_2_BODY}}"
-    - title: "{{WHY_CARD_3_TITLE}}"
-      body: "{{WHY_CARD_3_BODY}}"
+    - title: "Story-Led Florals"
+      body: "Every design begins with your story, using flowers, color, and form to reflect what matters most to you."
+    - title: "Where It Matters Most"
+      body: "Your budget is guided toward the moments that will have the greatest impact on your day."
+    - title: "Botany-Informed Design"
+      body: "Grounded in plant science and floral training, each piece is designed to move, last, and feel intentional."
+    - title: "Floral Design as Art"
+      body: "Sculptural, expressive, and designed with movement. Florals that feel like art, not just decoration."
+    - title: "Environmentally-Conscious"
+      body: "With sustainability in mind, we prioritize foam-free mechanics and avoid single use plastics whenever possible, along with local blooms and thoughtful sourcing."
+    - title: "Rooted in Meaning"
+      body: "This work is personal to me. Guided by my faith and a desire to create something meaningful for every story I'm trusted with. All love stories are welcome."
 
 approach:
-  label: "{{APPROACH_LABEL}}"
-  heading: "{{APPROACH_HEADING}}"
-  text: "{{APPROACH_TEXT}}"
-  cta: "{{APPROACH_CTA}}"
-  image: "{{APPROACH_IMAGE}}"
-  image_alt: "{{APPROACH_IMAGE_ALT}}"
+  label: "Our Approach"
+  heading: "Designed with Intention"
+  text: "This process starts with listening. We take time to understand what matters most to you, your story, your style, and the feeling you want to evoke, so your flowers reflect something meaningful, not just beautiful."
+  cta: "Learn Our Story"
+  image: "/assets/FloristAtWork.jpg"
+  image_alt: "Florist at work arranging wedding flowers, Cottage Floral Design"
 
 process:
-  heading: "{{PROCESS_HEADING}}"
+  heading: "Four Simple Steps"
   steps:
     - number: "01"
-      title: "{{PROCESS_1_TITLE}}"
-      body: "{{PROCESS_1_BODY}}"
+      title: "Inquire"
+      body: "Share your date, venue, and floral dreams through our inquiry form."
     - number: "02"
-      title: "{{PROCESS_2_TITLE}}"
-      body: "{{PROCESS_2_BODY}}"
+      title: "Consult"
+      body: "We'll meet to discuss your vision, color palette, and design direction."
     - number: "03"
-      title: "{{PROCESS_3_TITLE}}"
-      body: "{{PROCESS_3_BODY}}"
+      title: "Design"
+      body: "We craft a custom floral proposal tailored to your celebration."
+    - number: "04"
+      title: "Celebrate"
+      body: "On your day, we deliver and install every bloom to perfection."
 
 services_marquee:
-  - "{{SERVICE_1}}"
-  - "{{SERVICE_2}}"
-  - "{{SERVICE_3}}"
-  - "{{SERVICE_4}}"
+  - "Weddings"
+  - "Elopements"
+  - "Bridal Showers"
+  - "Corporate Events"
+  - "Intimate Dinners"
+  - "Photo Shoots"
 
 portfolio_preview:
-  heading: "{{PORTFOLIO_HEADING}}"
-  text: "{{PORTFOLIO_TEXT}}"
-  image: "{{PORTFOLIO_PREVIEW_IMAGE}}"
-  image_alt: "{{PORTFOLIO_PREVIEW_ALT}}"
+  heading: "A Glimpse of Stories Told"
+  text: "From meaningful ceremony moments to thoughtfully designed details, these are the celebrations we've had the honor of shaping through flowers."
+  image: "/assets/pastblooms.jpg"
+  image_alt: "Past wedding floral work by Cottage Floral Design"
 
 cta:
-  heading: "{{CTA_HEADING}}"
-  text: "{{CTA_TEXT}}"
-  button: "{{CTA_BUTTON}}"
+  heading: "Ready to Bring Your Floral Vision to Life?"
+  text: "We'd love to hear about your celebration. Let's create something beautiful together."
+  button: "Begin Your Inquiry"

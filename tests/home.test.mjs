@@ -9,7 +9,7 @@ test("home page builds to /index.html", () => {
 test("home page renders hero from data file", () => {
   const html = readOutput("index.html");
   assert.match(html, /class="hero"/);
-  assert.match(html, /\{\{HERO_TITLE\}\}/);
+  assert.match(html, /Cottage Floral/);
 });
 
 test("home page renders nav and footer", () => {
@@ -20,5 +20,5 @@ test("home page renders nav and footer", () => {
 
 test("home page seo title comes from home.yml seo block", () => {
   const html = readOutput("index.html");
-  assert.match(html, /<title>\{\{HOME_SEO_TITLE\}\}<\/title>/);
+  assert.match(html, /<title>[^<]*Cottage Floral[^<]*<\/title>/);
 });
