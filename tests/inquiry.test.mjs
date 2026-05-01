@@ -6,9 +6,10 @@ test("inquiry page builds to /inquiry/index.html", () => {
   assert.ok(outputExists("inquiry/index.html"));
 });
 
-test("inquiry page renders form embed slot", () => {
+test("inquiry page renders the form embed", () => {
   const html = readOutput("inquiry/index.html");
-  assert.match(html, /\{\{INQUIRY_FORM_EMBED\}\}/);
+  // The Petala embed should render — check for the div target and script src
+  assert.match(html, /petala-embed-cottage-floral-design|app\.petalafloral\.com/i);
 });
 
 test("inquiry page renders nav and footer", () => {

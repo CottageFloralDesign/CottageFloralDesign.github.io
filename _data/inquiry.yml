@@ -1,15 +1,23 @@
 seo:
-  title: "{{INQUIRY_SEO_TITLE}}"
-  description: "{{INQUIRY_META_DESCRIPTION}}"
-  og_image: "{{INQUIRY_OG_IMAGE}}"
+  title: "Inquire — Cottage Floral Design"
+  description: "Ready to bring your floral vision to life? Fill out our inquiry form to start planning your dream wedding or event florals."
+  og_image: "/assets/inquire.jpg"
 
 hero:
-  image: "{{INQUIRY_HERO_IMAGE}}"
-  image_alt: "{{INQUIRY_HERO_IMAGE_ALT}}"
+  image: "/assets/inquire.jpg"
+  image_alt: "Inquire"
 
-form_embed_html: "{{INQUIRY_FORM_EMBED}}"
+form_embed_html: |
+  <div id="petala-embed-cottage-floral-design"></div>
+  <script src="https://app.petalafloral.com/javascripts/placement.js"
+          data-business="cottage-floral-design"
+          data-form="zmikl7lj"
+          data-target="petala-embed-cottage-floral-design"></script>
 
 testimonial_marquee:
-  - "{{INQUIRY_TESTIMONIAL_1}}"
-  - "{{INQUIRY_TESTIMONIAL_2}}"
-  - "{{INQUIRY_TESTIMONIAL_3}}"
+  - '"Such a good eye for color and style" —Aria'
+  - '"She understood exactly what we were wanting and executed it perfectly" —Kristine'
+  - '"Matches your story perfectly" —Baylee'
+  - '"She has an eye for how each arrangement will work in a very specific place." —Raven'
+  - '"She is friendly, easy to work with, reasonably priced, and so passionate about her work." —Tailor'
+  - '"I was blown away by her expertise, kindness, and genuine concern." —Haley'
