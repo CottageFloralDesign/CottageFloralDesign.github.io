@@ -9,7 +9,7 @@ test("home page includes LocalBusiness JSON-LD", () => {
 
 test("LocalBusiness schema contains business_name", () => {
   const html = readOutput("index.html");
-  assert.match(html, /"name":\s*"\{\{BUSINESS_NAME\}\}"/);
+  assert.match(html, /"name":\s*"Cottage Floral Design"/);
 });
 
 test("portfolio entry includes Article schema", () => {

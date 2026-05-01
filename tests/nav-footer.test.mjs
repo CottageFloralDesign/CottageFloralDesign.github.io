@@ -17,5 +17,5 @@ test("nav marks current page as active", () => {
 
 test("footer shows business name, location, and service areas", () => {
   const html = readOutput("index.html");
-  assert.match(html, /\{\{BUSINESS_NAME\}\}/);
+  assert.match(html, /Cottage Floral Design/);
 });

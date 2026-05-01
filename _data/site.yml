@@ -1,41 +1,43 @@
-business_name: "{{BUSINESS_NAME}}"
-tagline: "{{TAGLINE}}"
-url: "{{SITE_URL}}"
-announcement: "{{ANNOUNCEMENT}}"
+business_name: "Cottage Floral Design"
+tagline: "Bespoke Wedding & Event Florals"
+url: "https://cottagefloraldesign.com"
+announcement: "Now Booking 2026 & 2027 Weddings & Events"
 
 location:
-  city: "{{CITY}}"
-  region: "{{REGION}}"
+  city: "Salt Lake City"
+  region: "UT"
   service_areas:
-    - "{{SERVICE_AREA_1}}"
-    - "{{SERVICE_AREA_2}}"
-    - "{{SERVICE_AREA_3}}"
+    - "Salt Lake City"
+    - "Park City"
+    - "Wasatch Front"
 
 contact:
-  email: "{{CONTACT_EMAIL}}"
-  phone: "{{CONTACT_PHONE}}"
+  email: "hello@cottagefloraldesign.com"
+  phone: ""
 
 social:
-  instagram: "{{INSTAGRAM_URL}}"
-  pinterest: "{{PINTEREST_URL}}"
+  instagram: ""
+  pinterest: ""
 
 nav:
   - { label: "Home", url: "/" }
   - { label: "Portfolio", url: "/portfolio/" }
   - { label: "About", url: "/about/" }
+  - { label: "Mother's Day", url: "/mothers-day.html" }
+  - { label: "Dance Flowers", url: "/dance-flowers.html" }
   - { label: "Inquire", url: "/inquiry/" }
 
 theme:
-  primary: "{{PRIMARY}}"
-  primary_light: "{{PRIMARY_LIGHT}}"
-  primary_pale: "{{PRIMARY_PALE}}"
-  accent: "{{ACCENT}}"
-  accent_light: "{{ACCENT_LIGHT}}"
-  bg: "{{BG}}"
-  bg_dark: "{{BG_DARK}}"
-  text: "{{TEXT}}"
-  text_light: "{{TEXT_LIGHT}}"
-  highlight: "{{HIGHLIGHT}}"
-  ff_display: "{{FF_DISPLAY}}"
-  ff_body: "{{FF_BODY}}"
-  google_fonts_url: "{{GOOGLE_FONTS_URL}}"
+  primary: "#4A5D4E"
+  primary_light: "#6B7F6E"
+  primary_pale: "#D4DDD6"
+  accent: "#C9A5A0"
+  accent_light: "#E8D5D2"
+  bg: "#FAF7F2"
+  bg_dark: "#F2EDE5"
+  text: "#3A3A3A"
+  text_light: "#6B6B6B"
+  highlight: "#C4A96A"
+  ff_display: "'Cormorant Garamond', 'Georgia', serif"
+  ff_body: "'Questrial', 'Helvetica Neue', sans-serif"
+  google_fonts_url: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Questrial&display=swap"
