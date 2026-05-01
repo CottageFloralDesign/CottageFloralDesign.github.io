@@ -15,6 +15,9 @@ module.exports = function(eleventyConfig) {
 
   // Exclude docs and other non-site directories
   eleventyConfig.ignores.add("docs/**");
+  eleventyConfig.ignores.add("README.md");
+  eleventyConfig.ignores.add("HANDOFF.md");
+  eleventyConfig.ignores.add("DEPLOYMENT.md");
   eleventyConfig.ignores.add("portfolio/*.html");
   // mothers-day.html and dance-flowers.html use templateEngineOverride: ""
   // in their frontmatter (Task 9) — they pass through Eleventy verbatim.

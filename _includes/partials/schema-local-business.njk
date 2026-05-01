@@ -4,7 +4,9 @@
   "@type": "Florist",
   "name": "{{ site.business_name }}",
   "url": "{{ site.url }}",
+  {%- if site.contact.phone -%}
   "telephone": "{{ site.contact.phone }}",
+  {%- endif %}
   "email": "{{ site.contact.email }}",
   "image": "{{ site.url }}{{ seo_defaults.default_og_image }}",
   "areaServed": [
