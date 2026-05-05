@@ -341,7 +341,7 @@
 
     var now = new Date();
     var earlyBirdEnd = new Date('2026-05-01T00:00:00');
-    var ordersClosed = new Date('2026-05-05T00:00:00');
+    var ordersClosed = new Date('2026-05-08T12:00:00-06:00');
 
     var TAX_RATE = 0.0745;
     var VENMO_FEE = 0.02;
@@ -380,7 +380,7 @@
     if (earlyBird) {
       priceHTML += 'Early bird pricing ends <strong>April 30</strong><br>';
     }
-    priceHTML += 'Orders close <strong>May 4</strong>';
+    priceHTML += 'Orders close <strong>May 8 at noon</strong>';
     priceHTML += '</div>';
 
     pricingEl.innerHTML = '<p class="feature__label" style="margin-bottom: 0.5rem;">Pricing</p>' + priceHTML;
